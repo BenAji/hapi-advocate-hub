@@ -17,10 +17,41 @@
     <meta name="twitter:site" content="@hapi_org" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
     
+    <!-- Favicon - Dynamic based on theme -->
+    <link id="favicon-light" rel="icon" href="/lovable-uploads/8026fa5f-eaa3-490d-9a21-0015c3738e04.png" type="image/png">
+    <link id="favicon-dark" rel="icon" href="/lovable-uploads/4845fe11-87f3-496e-af1a-332b0cf80473.png" type="image/png" media="(prefers-color-scheme: dark)">
+    
     <!-- Google Fonts - Using Lora as a professional serif alternative to AidaBook -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+      // Dynamic favicon switching based on theme
+      function updateFavicon() {
+        const isDark = document.documentElement.classList.contains('dark');
+        const lightFavicon = document.getElementById('favicon-light');
+        const darkFavicon = document.getElementById('favicon-dark');
+        
+        if (isDark) {
+          lightFavicon.href = '/lovable-uploads/4845fe11-87f3-496e-af1a-332b0cf80473.png';
+          darkFavicon.href = '/lovable-uploads/4845fe11-87f3-496e-af1a-332b0cf80473.png';
+        } else {
+          lightFavicon.href = '/lovable-uploads/8026fa5f-eaa3-490d-9a21-0015c3738e04.png';
+          darkFavicon.href = '/lovable-uploads/8026fa5f-eaa3-490d-9a21-0015c3738e04.png';
+        }
+      }
+
+      // Initial favicon update
+      document.addEventListener('DOMContentLoaded', updateFavicon);
+      
+      // Listen for theme changes
+      const observer = new MutationObserver(updateFavicon);
+      observer.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['class']
+      });
+    </script>
   </head>
 
   <body>
