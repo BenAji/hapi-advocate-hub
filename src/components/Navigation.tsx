@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -56,9 +55,11 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
-            <div className="w-10 h-10 bg-hapi-bright-green rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform duration-200">
-              <span className="text-white font-bold text-lg">H</span>
-            </div>
+            <img
+              src="/dark.png"
+              alt="Logo"
+              className="w-10 h-10 rounded-lg object-cover group-hover:scale-105 transition-transform duration-200"
+            />
             <span className="font-aida font-bold text-xl text-hapi-dark-green dark:text-white">H.A.P.I.</span>
           </Link>
 

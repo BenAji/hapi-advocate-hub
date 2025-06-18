@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Mail, MapPin, Plus, Minus, Contrast, Type } from 'lucide-react';
@@ -25,9 +24,11 @@ const Footer = () => {
           {/* About Section */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-hapi-bright-green rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold">H</span>
-              </div>
+              <img
+                src="/dark.png"
+                alt="Logo"
+                className="w-8 h-8 rounded-lg object-cover"
+              />
               <span className="font-aida font-bold text-xl">H.A.P.I.</span>
             </div>
             <p className="text-gray-300 text-sm leading-relaxed">

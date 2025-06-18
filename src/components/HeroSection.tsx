@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Users, Target, BookOpen } from 'lucide-react';
@@ -87,7 +86,11 @@ const HeroSection = () => {
                 <div className="h-48 bg-gradient-to-br from-hapi-bright-green/20 to-emerald-200/40 rounded-2xl flex items-center justify-center">
                   <div className="text-center space-y-4">
                     <div className="w-16 h-16 bg-hapi-bright-green rounded-full flex items-center justify-center mx-auto">
-                      <span className="text-white font-bold text-2xl">H</span>
+                      <img
+                        src="/light.png"
+                        alt="Logo"
+                        className="w-24 h-24 rounded-full object-cover mx-auto"
+                      />
                     </div>
                     <p className="text-hapi-dark-green dark:text-white font-semibold">
                       Transforming Healthcare Through Education
