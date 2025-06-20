@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Users, Target, BookOpen } from 'lucide-react';
@@ -22,12 +23,11 @@ const HeroSection = () => {
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-aida font-bold text-hapi-dark-green dark:text-white leading-tight">
                 <span className="block">H.A.P.I.</span>
                 <span className="block text-hapi-bright-green text-3xl sm:text-4xl lg:text-5xl font-medium mt-2">
-                  Empowering Health Advocacy
+                  Advancing Pharmacy Practice in Nigeria
                 </span>
               </h1>
               <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-2xl">
-                Health Outcomes, Advocacy, and Professional Development Initiative - 
-                Building a healthier future through student leadership, community engagement, and professional excellence.
+                The Health Outcomes, Advocacy, and Professional Development Initiative (H.A.P.I.) is committed to transforming Nigeria's pharmacy landscape through Good Pharmacy Practice (GPP), compassionate care, and leadership development. We build healthier communities by empowering student chapters, advocating for standard pharmacy practice, and advancing professional excellence.
               </p>
             </div>
 
@@ -93,7 +93,7 @@ const HeroSection = () => {
                       />
                     </div>
                     <p className="text-hapi-dark-green dark:text-white font-semibold">
-                      Transforming Healthcare Through Education
+                      Transforming Healthcare Through Compassionate Pharmacy Practice
                     </p>
                   </div>
                 </div>
@@ -102,19 +102,19 @@ const HeroSection = () => {
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-white/80 dark:bg-hapi-dark-green/40 p-4 rounded-xl border border-green-100 dark:border-hapi-bright-green/20">
                     <h4 className="font-semibold text-hapi-dark-green dark:text-white text-sm mb-1">Health Outcomes</h4>
-                    <p className="text-xs text-gray-600 dark:text-gray-300">Evidence-based health solutions</p>
+                    <p className="text-xs text-gray-600 dark:text-gray-300">GPP-driven patient-centered care</p>
                   </div>
                   <div className="bg-white/80 dark:bg-hapi-dark-green/40 p-4 rounded-xl border border-green-100 dark:border-hapi-bright-green/20">
                     <h4 className="font-semibold text-hapi-dark-green dark:text-white text-sm mb-1">Advocacy</h4>
-                    <p className="text-xs text-gray-600 dark:text-gray-300">Policy change and awareness</p>
+                    <p className="text-xs text-gray-600 dark:text-gray-300">Raising standards and shaping policy</p>
                   </div>
                   <div className="bg-white/80 dark:bg-hapi-dark-green/40 p-4 rounded-xl border border-green-100 dark:border-hapi-bright-green/20">
                     <h4 className="font-semibold text-hapi-dark-green dark:text-white text-sm mb-1">Professional Dev</h4>
-                    <p className="text-xs text-gray-600 dark:text-gray-300">Skills and career growth</p>
+                    <p className="text-xs text-gray-600 dark:text-gray-300">Training the next generation of pharmacy leaders</p>
                   </div>
                   <div className="bg-white/80 dark:bg-hapi-dark-green/40 p-4 rounded-xl border border-green-100 dark:border-hapi-bright-green/20">
-                    <h4 className="font-semibold text-hapi-dark-green dark:text-white text-sm mb-1">Initiative</h4>
-                    <p className="text-xs text-gray-600 dark:text-gray-300">Student-led innovation</p>
+                    <h4 className="font-semibold text-hapi-dark-green dark:text-white text-sm mb-1">Student Chapters</h4>
+                    <p className="text-xs text-gray-600 dark:text-gray-300">University-led health innovation</p>
                   </div>
                 </div>
               </div>

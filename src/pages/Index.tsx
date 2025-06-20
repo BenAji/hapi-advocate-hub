@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -22,13 +21,11 @@ const Index = () => {
               Our Mission
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              To empower students and professionals in the health sector through advocacy, 
-              evidence-based interventions, and capacity building initiatives that improve health outcomes 
-              in communities across Nigeria and beyond.
+              The Health Outcomes, Advocacy, and Professional Development Initiative (H.A.P.I.) is committed to transforming Nigeria's pharmacy landscape through Good Pharmacy Practice (GPP), compassionate care, and leadership development. We build healthier communities by empowering student chapters, advocating for standard pharmacy practice, and advancing professional excellence.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-4 gap-8">
             <Card className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-green-100 dark:border-hapi-bright-green/20 bg-white dark:bg-hapi-dark-green/20">
               <CardHeader className="text-center">
                 <div className="w-16 h-16 bg-hapi-bright-green/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-hapi-bright-green/20 transition-colors duration-300">
@@ -38,8 +35,7 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-center text-gray-600 dark:text-gray-300">
-                  Implementing evidence-based health solutions that create measurable improvements 
-                  in community health and wellbeing.
+                  GPP-driven patient-centered care that prioritizes quality pharmaceutical services and patient safety.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -53,8 +49,7 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-center text-gray-600 dark:text-gray-300">
-                  Championing policy changes and raising awareness on critical health issues 
-                  that affect our communities.
+                  Raising standards and shaping policy to advance pharmacy practice and patient care in Nigeria.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -68,8 +63,21 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-center text-gray-600 dark:text-gray-300">
-                  Building capacity and skills among health professionals and students 
-                  for enhanced career growth and impact.
+                  Training the next generation of pharmacy leaders through comprehensive capacity building programs.
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-green-100 dark:border-hapi-bright-green/20 bg-white dark:bg-hapi-dark-green/20">
+              <CardHeader className="text-center">
+                <div className="w-16 h-16 bg-hapi-bright-green/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-hapi-bright-green/20 transition-colors duration-300">
+                  <Users className="h-8 w-8 text-hapi-bright-green" />
+                </div>
+                <CardTitle className="font-aida text-hapi-dark-green dark:text-white">Student Chapters</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-center text-gray-600 dark:text-gray-300">
+                  University-led health innovation driving change through student leadership and community engagement.
                 </CardDescription>
               </CardContent>
             </Card>
