@@ -141,7 +141,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <p className="text-gray-400 text-sm">
-            © 2024 Health Outcomes, Advocacy, and Professional Development Initiative (H.A.P.I.). 
+            © 2025 Health Outcomes, Advocacy, and Professional Development Initiative (H.A.P.I.). 
             All rights reserved.
           </p>
         </div>
