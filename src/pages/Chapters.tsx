@@ -14,19 +14,19 @@ const Chapters = () => {
       name: 'OAU Chapter',
       university: 'Obafemi Awolowo University',
       location: 'Ile-Ife, Osun State',
-      established: '2022',
+      established: '2023',
       members: '45+',
-      description: 'The OAU Chapter is dedicated to advancing health advocacy and professional development among students at Obafemi Awolowo University. Our initiatives focus on community health education, policy advocacy, and skill-building workshops.',
+      description: 'The OAU Chapter is dedicated to advancing health advocacy and professional development among students at Obafemi Awolowo University. Our initiatives focus on community health engagement, professional development, and and interprofessional collaboration.',
       achievements: [
-        'Conducted 15+ community health outreach programs',
+        '5,000+ community members reached through health campaigns',
         'Trained 200+ students in health advocacy skills',
-        'Established partnerships with 5 local health facilities',
-        'Organized annual Health Career Development Summit'
+        '3 interdisciplinary speaker forums held',
+        'Organized 5+ digital health campaigns '
       ],
       leadership: [
-        { name: 'Adebayo Olumide', role: 'Chapter President' },
-        { name: 'Fatima Adesola', role: 'Vice President' },
-        { name: 'Michael Ogundipe', role: 'Secretary' }
+        { name: 'Mayowa Mulero', role: 'Student Rep' },
+        { name: 'Christopher Aleji', role: 'Co-Student Rep' },
+        { name: 'Ademola Bakenne', role: 'Program Coordinator' }
       ],
       contact: 'oau@hapi-initiative.org'
     },

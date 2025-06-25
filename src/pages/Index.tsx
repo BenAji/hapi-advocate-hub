@@ -21,11 +21,11 @@ const Index = () => {
               Our Mission
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              The Health Outcomes, Advocacy, and Professional Development Initiative (H.A.P.I.) is committed to transforming Nigeria's pharmacy landscape through Good Pharmacy Practice (GPP), compassionate care, and leadership development. We build healthier communities by empowering student chapters, advocating for standard pharmacy practice, and advancing professional excellence.
+              To advocate for and enforce standard pharmacy practice at all levels, improve patient health outcomes, and promote pharmacists' professional development as key healthcare professionals in the Nigerian healthcare system.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             <Card className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-green-100 dark:border-hapi-bright-green/20 bg-white dark:bg-hapi-dark-green/20">
               <CardHeader className="text-center">
                 <div className="w-16 h-16 bg-hapi-bright-green/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-hapi-bright-green/20 transition-colors duration-300">
@@ -35,7 +35,7 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-center text-gray-600 dark:text-gray-300">
-                  GPP-driven patient-centered care that prioritizes quality pharmaceutical services and patient safety.
+                  Advancing Good Pharmacy Practice (GPP) to improve clinical outcomes and community well-being.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -49,7 +49,7 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-center text-gray-600 dark:text-gray-300">
-                  Raising standards and shaping policy to advance pharmacy practice and patient care in Nigeria.
+                  Promoting policy change and raising public and institutional awareness about the value of compassionate, evidence-based pharmaceutical care.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -63,10 +63,11 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-center text-gray-600 dark:text-gray-300">
-                  Training the next generation of pharmacy leaders through comprehensive capacity building programs.
+                  Equipping current and future pharmacists with leadership, technical, and ethical skills to thrive and drive healthcare impact in Nigeria.
                 </CardDescription>
               </CardContent>
             </Card>
+            {/*
 
             <Card className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-green-100 dark:border-hapi-bright-green/20 bg-white dark:bg-hapi-dark-green/20">
               <CardHeader className="text-center">
@@ -80,7 +81,9 @@ const Index = () => {
                   University-led health innovation driving change through student leadership and community engagement.
                 </CardDescription>
               </CardContent>
-            </Card>
+            </Card> 
+            */}
+
           </div>
         </div>
       </section>
@@ -93,7 +96,7 @@ const Index = () => {
               Our Student Chapters
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Active student-led chapters driving change in universities across Nigeria
+              At H.A.P.I., we cultivate future leaders through campus chapters that promote Good Pharmacy Practice (GPP), compassionate care, and community outreach. Our student members are empowered to lead advocacy efforts, organize educational campaigns, and implement local health solutions.
             </p>
           </div>
 
@@ -110,8 +113,9 @@ const Index = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-gray-600 dark:text-gray-300">
-                  Leading health advocacy initiatives and professional development programs 
-                  among students at one of Nigeria's premier universities.
+                  Approved to operate by PANS-OAU on August 21, 2023, the students of the OAU chapter have led impactful 
+                  outreach initiatives and professional development programs focused on strengthening pharmacy practice and 
+                  public trust in healthcare.
                 </p>
                 <Link to="/chapters/oau">
                   <Button variant="outline" className="group-hover:bg-hapi-bright-green group-hover:text-white group-hover:border-hapi-bright-green">
@@ -133,8 +137,8 @@ const Index = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-gray-600 dark:text-gray-300">
-                  Pioneering community health projects and capacity building initiatives 
-                  at Nigeria's first university.
+                  Approved to operate by PANS-UI on April 10, 2023, the UI chapter is H.A.P.I.’s pioneer chapter.
+                  It has become a model of community-centered pharmacy advocacy, capacity building, and innovative student-led projects that improve health literacy and outcomes.
                 </p>
                 <Link to="/chapters/ui">
                   <Button variant="outline" className="group-hover:bg-hapi-bright-green group-hover:text-white group-hover:border-hapi-bright-green">
@@ -167,7 +171,8 @@ const Index = () => {
                   <CardTitle className="font-aida text-hapi-dark-green dark:text-white">Health Advocacy Workshop</CardTitle>
                 </div>
                 <CardDescription className="text-gray-600 dark:text-gray-300">
-                  March 15, 2024 • Virtual Event
+                  • Virtual training on policy and strategy
+
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -188,7 +193,7 @@ const Index = () => {
                   <CardTitle className="font-aida text-hapi-dark-green dark:text-white">Community Health Fair</CardTitle>
                 </div>
                 <CardDescription className="text-gray-600 dark:text-gray-300">
-                  April 22, 2024 • Ibadan, Nigeria
+                  • On-ground engagement and screenings
                 </CardDescription>
               </CardHeader>
               <CardContent>

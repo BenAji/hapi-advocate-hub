@@ -16,73 +16,93 @@ const ChapterDetail = () => {
       university: 'Obafemi Awolowo University',
       fullName: 'Obafemi Awolowo University Chapter',
       location: 'Ile-Ife, Osun State, Nigeria',
-      established: 'March 2022',
-      members: '45+',
-      description: 'The Obafemi Awolowo University Chapter of H.A.P.I. stands as a beacon of health advocacy and professional development in southwestern Nigeria. Founded by passionate health science students, our chapter has grown into a dynamic community of learners, advocates, and future health leaders.',
-      mission: 'To empower OAU students with the knowledge, skills, and networks necessary to become effective health advocates and professional leaders in their respective fields.',
+      established: 'August 21, 2023',
+      members: '20+',
+      description: 'The OAU Chapter of the Health Outcomes, Advocacy, and Professional Development Initiative (H.A.P.I.) is a vibrant student-led hub advancing Good Pharmacy Practice (GPP) and compassionate care in Southwestern Nigeria. Founded by forward-thinking pharmacy students, the chapter continues to empower student advocates, elevate professional standards, and make meaningful contributions to good pharmacy practice in Nigeria.',
+      mission: 'To equip OAU students with the skills, experiences, and mindset to lead community-centered pharmacy initiatives, advocate for better health policies, and become trusted agents of change in Nigeria’s healthcare system.',
       activities: [
         {
           title: 'Community Health Outreach',
-          description: 'Monthly health education programs in surrounding communities',
+          description: 'Hosting education programs and awareness drives (e.g., antimicrobial stewardship campaigns, pharmacy professional awareness in schools) to improve population-level health literacy and patient safety.',
           impact: '5,000+ community members reached'
         },
         {
-          title: 'Skills Development Workshops',
-          description: 'Professional development sessions on leadership, research, and advocacy',
+          title: 'Professional Development',
+          description: 'Hands-on training and virtual/in-person workshops in pharmacy leadership, research, and advocacy (e.g., Mentorship Series, Policy & Practice webinars).',
           impact: '200+ students trained'
         },
         {
-          title: 'Health Career Mentorship',
-          description: 'Pairing students with health professionals for career guidance',
-          impact: '100+ mentorship relationships established'
+          title: 'Interprofessional Collaboration',
+          description: 'Creating platforms for cross-disciplinary dialogue between medical, pharmacy, nursing, and public health students to foster team-based care.',
+          impact: '3 Interdisplinary speaker forums held'
         },
         {
-          title: 'Research Initiatives',
-          description: 'Student-led research projects addressing local health challenges',
-          impact: '15+ research projects completed'
+          title: 'Public Health Social Advocacy',
+          description: 'Student-led campaigns hosted across social media platforms to educate the public on pressing health issues, often aligned with national and global observances like World Pharmacists Day. These advocacy efforts raise awareness about responsible medication use, mental health, and health equity.',
+          impact: '5+ digital health campaigns and research-informed advocacy projects completed'
         }
       ],
       leadership: [
         {
-          name: 'Adebayo Olumide',
-          role: 'Chapter President',
-          year: '4th Year Medical Student',
-          bio: 'Passionate about global health policy and community medicine'
+          name: 'Mayowa Mulero',
+          role: 'Student Representative',
+          year: '5th Year Pharmacy Student',
+          bio: 'Health leadership, systems strengthening, and public-facing campus engagement'
         },
         {
-          name: 'Fatima Adesola',
-          role: 'Vice President',
-          year: '3rd Year Nursing Student',
-          bio: 'Advocate for mental health awareness and maternal healthcare'
-        },
-        {
-          name: 'Michael Ogundipe',
-          role: 'Secretary',
-          year: '3rd Year Public Health Student',
-          bio: 'Focused on epidemiology and health data analytics'
-        },
-        {
-          name: 'Blessing Adeoye',
-          role: 'Programs Director',
+          name: 'Christopher Aleji',
+          role: 'Co-Student Representative',
           year: '4th Year Pharmacy Student',
-          bio: 'Champion of pharmaceutical care and medication safety'
+          bio: 'Collaborative leadership and pharmacy advocacy'
+        },
+        {
+          name: 'Ademola Bakenne',
+          role: 'Program Coordinator',
+          year: '5th Year Pharmacy Student',
+          bio: 'Professional development program design and team logistics'
+        },
+        {
+          name: 'Opeyemi Oyegunle',
+          role: 'Secretary',
+          year: '4th Year Pharmacy Student',
+          bio: 'Communication, documentation, and event coordination'
+        }
+        ,
+        {
+          name: 'Stella Olugbo',
+          role: 'Graphic Designer',
+          year: '2nd Year Pharmacy Student',
+          bio: 'Visual Story telling and Digital Health Promotion'
+        }
+        ,
+        {
+          name: 'Favour Aremu',
+          role: 'Immediate Past Student Rep',
+          year: 'Graduate Pharmacy Student',
+          bio: 'Mentorship, institutional memory, and chapter advisory support'
         }
       ],
       recentEvents: [
         {
-          title: 'Mental Health Awareness Week',
-          date: 'February 2024',
-          description: 'Campus-wide initiative promoting mental wellness among students'
+          title: 'PANS OAU Week Community Outreach',
+          date: 'May 2025',
+          description: 'Student-led campus activation focused on raising awareness about Good Pharmacy Practice and the mission of H.A.P.I. among peers at OAU.'
         },
         {
-          title: 'Community Health Fair',
-          date: 'January 2024',
-          description: 'Free health screenings and education in Ile-Ife communities'
+          title: 'Mentorship in Professional Development',
+          date: 'March 2025',
+          description: 'Two-part virtual event highlighting the power of mentorship in pharmacy careers, featuring seasoned professionals sharing their journeys'
         },
         {
-          title: 'Career Development Summit',
-          date: 'December 2023',
-          description: 'Annual event connecting students with health industry professionals'
+          title: 'Pharmacy Practice in Nigeria – Virtual Town Hall',
+          date: 'December 2024',
+          description: 'An open session with pharmacy industry leaders addressing gaps in Nigeria’s pharmacy practice landscape and envisioning reforms.'
+        }
+        ,
+        {
+          title: 'Together for Better Care – Interprofessional Open Mic',
+          date: 'November 2024',
+          description: 'Live Twitter Space session fostering dialogue among pharmacists, doctors, nurses, and physical therapists on the importance of collaborative care.'
         }
       ],
       achievements: [

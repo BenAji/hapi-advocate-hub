@@ -8,19 +8,19 @@ import { Users, Target, Heart, Award, BookOpen, Globe } from 'lucide-react';
 const About = () => {
   const leadership = [
     {
-      name: "Dr. Sarah Adebayo",
-      role: "Executive Director",
-      description: "Leading H.A.P.I.'s strategic vision and community partnerships"
+      name: "Ruth Adeyemi",
+      role: "Board Chair & Executive Director (Interim)",
+      description: "Oversees overall strategy, operations, and vision alignment"
     },
     {
-      name: "Prof. Michael Okonkwo",
-      role: "Director of Programs",
-      description: "Overseeing educational initiatives and student chapter development"
+      name: "Dr. John (Ikenna) Ogwuegbu",
+      role: "Vice Chair / Vice President",
+      description: "Supports governance, leadership, and external engagement"
     },
     {
-      name: "Dr. Fatima Ibrahim",
-      role: "Director of Advocacy",
-      description: "Spearheading policy advocacy and stakeholder engagement"
+      name: "Dr. Gbola Olayiwola",
+      role: "Director of Strategic Partnerships / External Relations",
+      description: "Leads institutional collaborations and funding opportunities"
     }
   ];
 
@@ -28,32 +28,32 @@ const About = () => {
     {
       icon: Heart,
       title: "Compassion",
-      description: "We approach every initiative with empathy and genuine care for community wellbeing"
+      description: "Empathy and genuine care drive every initiative."
     },
     {
       icon: Target,
       title: "Excellence",
-      description: "We strive for the highest standards in all our programs and interventions"
+      description: "We hold ourselves to the highest standards in training, research, and advocacy."
     },
     {
       icon: Users,
       title: "Collaboration",
-      description: "We believe in the power of partnerships and collective action"
+      description: " We thrive on partnership across disciplines, institutions, and borders."
     },
     {
       icon: Award,
       title: "Integrity",
-      description: "We maintain transparency and ethical practices in all our endeavors"
+      description: "Transparency and professionalism are core to our operations."
     },
     {
       icon: BookOpen,
       title: "Innovation",
-      description: "We embrace creative solutions and evidence-based approaches"
+      description: "We pursue data-driven, creative solutions to improve pharmacy and public health systems."
     },
     {
       icon: Globe,
       title: "Impact",
-      description: "We focus on creating measurable, sustainable change in communities"
+      description: "We focus on sustainable results that improve health outcomes across communities."
     }
   ];
 
@@ -69,9 +69,9 @@ const About = () => {
               About H.A.P.I.
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Health Outcomes, Advocacy, and Professional Development Initiative (H.A.P.I.) is a 
-              nonprofit organization dedicated to transforming healthcare through student leadership, 
-              community engagement, and evidence-based advocacy.
+              Health Outcomes, Advocacy, and Professional Development Initiative (H.A.P.I.) is a nonprofit 
+              dedicated to strengthening pharmacy practice and transforming healthcare delivery across 
+              Nigeria through student leadership, research, advocacy, and compassionate care.
             </p>
           </div>
         </div>
@@ -90,9 +90,9 @@ const About = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                  To empower students and professionals in the health sector through advocacy, 
-                  evidence-based interventions, and capacity building initiatives that improve 
-                  health outcomes in communities across Nigeria and beyond.
+                  To advocate for and enforce standard pharmacy practice at all levels, improve patient health 
+                  outcomes, and promote pharmacists’ professional development as key healthcare professionals in 
+                  the Nigerian healthcare system.
                 </p>
               </CardContent>
             </Card>
@@ -106,9 +106,8 @@ const About = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                  A healthier Africa where young leaders drive sustainable health improvements, 
-                  advocate for equitable healthcare policies, and contribute to global health 
-                  innovation through professional excellence.
+                  To build a Nigerian pharmacy practice system where Good Pharmacy Practice (GPP) and Compassionate 
+                  Care lead to improved health outcomes across urban and rural communities.
                 </p>
               </CardContent>
             </Card>
@@ -122,9 +121,9 @@ const About = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                  Since our founding, we have trained over 100 student leaders, implemented 
-                  50+ community health projects, and influenced policy decisions affecting 
-                  thousands of individuals across Nigeria.
+                  Since our founding in 2022, H.A.P.I. has trained over 500 student leaders, Implemented 50+ campus and community health projects, and
+                  Launched advocacy and research efforts that influence health policy and promote pharmacy excellence in Nigeria.
+
                 </p>
               </CardContent>
             </Card>
@@ -177,7 +176,7 @@ const About = () => {
               <div className="flex flex-col md:flex-row gap-8 items-center">
                 <div className="md:w-1/3">
                   <div className="w-full h-48 bg-gradient-to-br from-hapi-bright-green/20 to-emerald-200/40 rounded-2xl flex items-center justify-center">
-                    <span className="text-hapi-dark-green dark:text-white font-aida font-bold text-2xl">2020</span>
+                    <span className="text-hapi-dark-green dark:text-white font-aida font-bold text-2xl">2022</span>
                   </div>
                 </div>
                 <div className="md:w-2/3">
@@ -185,10 +184,7 @@ const About = () => {
                     The Beginning
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                    H.A.P.I. was founded by a group of passionate health science students who 
-                    recognized the need for stronger advocacy and professional development in 
-                    Nigeria's health sector. What started as informal study groups and community 
-                    outreach efforts has grown into a structured organization with multiple chapters.
+                    H.A.P.I., formerly TCPPP, was founded on March 12, 2022, by Ruth Adeyemi and a few committed colleagues under the name The Compassionate Pharmacy Practice Project (TCPPP). The organization was born from a desire to improve community-level pharmacy standards and was inspired by Ruth’s early exposure to inadequate healthcare and her late uncle’s example of excellence in pharmacy practice.
                   </p>
                 </div>
               </div>
@@ -196,7 +192,7 @@ const About = () => {
               <div className="flex flex-col md:flex-row-reverse gap-8 items-center">
                 <div className="md:w-1/3">
                   <div className="w-full h-48 bg-gradient-to-br from-hapi-bright-green/20 to-emerald-200/40 rounded-2xl flex items-center justify-center">
-                    <span className="text-hapi-dark-green dark:text-white font-aida font-bold text-2xl">2022</span>
+                    <span className="text-hapi-dark-green dark:text-white font-aida font-bold text-2xl">2023</span>
                   </div>
                 </div>
                 <div className="md:w-2/3">
@@ -204,9 +200,7 @@ const About = () => {
                     Expansion & Growth
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                    Our first official chapters were established at the University of Ibadan and 
-                    Obafemi Awolowo University. This marked the beginning of our structured approach 
-                    to student leadership development and community health advocacy across Nigerian universities.
+                    H.A.P.I. transitioned from a grassroots campaign into a structured nonprofit with established student chapters at Obafemi Awolowo University (OAU) and University of Ibadan (UI). New chapters at Benue State University and University of Jos are currently underway.
                   </p>
                 </div>
               </div>
@@ -214,7 +208,7 @@ const About = () => {
               <div className="flex flex-col md:flex-row gap-8 items-center">
                 <div className="md:w-1/3">
                   <div className="w-full h-48 bg-gradient-to-br from-hapi-bright-green/20 to-emerald-200/40 rounded-2xl flex items-center justify-center">
-                    <span className="text-hapi-dark-green dark:text-white font-aida font-bold text-2xl">2024</span>
+                    <span className="text-hapi-dark-green dark:text-white font-aida font-bold text-2xl">2025</span>
                   </div>
                 </div>
                 <div className="md:w-2/3">
@@ -222,10 +216,7 @@ const About = () => {
                     Looking Forward
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                    Today, H.A.P.I. continues to expand its reach and impact. We're working on 
-                    establishing new chapters, developing innovative health programs, and 
-                    strengthening our advocacy efforts to create lasting change in Nigeria's 
-                    healthcare landscape.
+                    Today, H.A.P.I. continues to expand its research partnerships, public health programming, and advocacy footprint. Through strategic leadership, we aim to shape national pharmacy policy and build a system where every pharmacy in Nigeria champions professional standards and patient-centered care.
                   </p>
                 </div>
               </div>
@@ -242,7 +233,7 @@ const About = () => {
               Leadership Team
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Meet the dedicated professionals guiding H.A.P.I.'s mission and vision
+              Meet the board and executive leadership guiding H.A.P.I.’s vision
             </p>
           </div>
 
