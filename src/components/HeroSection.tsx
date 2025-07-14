@@ -66,14 +66,14 @@ const HeroSection = () => {
                 <div className="flex justify-center mb-2">
                   <Target className="h-8 w-8 text-hapi-bright-green" />
                 </div>
-                <div className="text-2xl font-bold text-hapi-dark-green dark:text-white">50+</div>
+                <div className="text-2xl font-bold text-hapi-dark-green dark:text-white">20+</div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">Projects Completed</div>
               </div>
               <div className="text-center">
                 <div className="flex justify-center mb-2">
                   <BookOpen className="h-8 w-8 text-hapi-bright-green" />
                 </div>
-                <div className="text-2xl font-bold text-hapi-dark-green dark:text-white">100+</div>
+                <div className="text-2xl font-bold text-hapi-dark-green dark:text-white">500+</div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">Students Trained</div>
               </div>
             </div>

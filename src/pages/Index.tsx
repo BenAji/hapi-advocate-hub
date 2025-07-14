@@ -151,6 +151,68 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Coming Soon Chapters */}
+      <section className="py-20 bg-gray-50 dark:bg-hapi-dark-green/50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-4xl font-aida font-bold text-hapi-dark-green dark:text-white mb-4">
+              Coming Soon
+            </h2>
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+              These chapters are currently in the approval process and will expand H.A.P.I.'s mission to additional campuses across Nigeria.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12">
+            <Card className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-green-100 dark:border-hapi-bright-green/20 bg-white dark:bg-hapi-dark-green/20 opacity-75">
+              <CardHeader>
+                <div className="flex items-center justify-between">
+                  <CardTitle className="font-aida text-hapi-dark-green dark:text-white">Benue State University</CardTitle>
+                  <MapPin className="h-5 w-5 text-hapi-bright-green" />
+                </div>
+                <CardDescription className="text-gray-600 dark:text-gray-300">
+                  Benue State University
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-gray-600 dark:text-gray-300">
+                  Our upcoming chapter at Benue State University is currently in the approval process. 
+                  This expansion will bring H.A.P.I.'s mission of Good Pharmacy Practice and health advocacy 
+                  to the heart of Benue State, fostering the next generation of pharmacy leaders.
+                </p>
+                <div className="flex items-center gap-2 text-hapi-bright-green">
+                  <Calendar className="h-4 w-4" />
+                  <span className="text-sm font-medium">Approval in Progress</span>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-green-100 dark:border-hapi-bright-green/20 bg-white dark:bg-hapi-dark-green/20 opacity-75">
+              <CardHeader>
+                <div className="flex items-center justify-between">
+                  <CardTitle className="font-aida text-hapi-dark-green dark:text-white">University of Jos</CardTitle>
+                  <MapPin className="h-5 w-5 text-hapi-bright-green" />
+                </div>
+                <CardDescription className="text-gray-600 dark:text-gray-300">
+                  University of Jos
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-gray-600 dark:text-gray-300">
+                  The University of Jos chapter is currently undergoing the approval process. 
+                  This new chapter will extend H.A.P.I.'s reach to Plateau State, empowering 
+                  pharmacy students to become advocates for better healthcare practices and community health.
+                </p>
+                <div className="flex items-center gap-2 text-hapi-bright-green">
+                  <Calendar className="h-4 w-4" />
+                  <span className="text-sm font-medium">Approval in Progress</span>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Upcoming Events Highlight */}
       <section className="py-20 bg-gray-50 dark:bg-hapi-dark-green/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
