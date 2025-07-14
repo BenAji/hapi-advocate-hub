@@ -109,7 +109,7 @@ const HeroSection = () => {
                     <p className="text-xs text-gray-600 dark:text-gray-300">Raising standards and shaping policy</p>
                   </div>
                   <div className="bg-white/80 dark:bg-hapi-dark-green/40 p-4 rounded-xl border border-green-100 dark:border-hapi-bright-green/20">
-                    <h4 className="font-semibold text-hapi-dark-green dark:text-white text-sm mb-1">Professional Dev</h4>
+                    <h4 className="font-semibold text-hapi-dark-green dark:text-white text-sm mb-1">Professional Development</h4>
                     <p className="text-xs text-gray-600 dark:text-gray-300">Training the next generation of pharmacy leaders</p>
                   </div>
                   <div className="bg-white/80 dark:bg-hapi-dark-green/40 p-4 rounded-xl border border-green-100 dark:border-hapi-bright-green/20">
