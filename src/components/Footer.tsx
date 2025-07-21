@@ -50,20 +50,6 @@ const Footer = () => {
               </div>
             </div>
             <div className="flex space-x-4 pt-2">
-              {/* X (Twitter) */}
-              <a
-                href="https://www.twitter.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="X (Twitter)"
-              >
-                <Button variant="ghost" size="sm" className="text-gray-300 hover:text-hapi-bright-green hover:bg-hapi-bright-green/10">
-                  {/* X (Twitter) icon */}
-                  <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M22.162 0 12.01 10.153 1.858 0H0l12.01 12.01L24 0zM0 2.838l7.07 7.07L0 17.01V2.838zm24 0v14.172l-7.07-7.07L24 2.838zM2.838 24l7.07-7.07 2.102 2.102 2.102-2.102 7.07 7.07H2.838z"/>
-                  </svg>
-                </Button>
-              </a>
               {/* Instagram */}
               <a
                 href="https://www.instagram.com/hapinitiative/"

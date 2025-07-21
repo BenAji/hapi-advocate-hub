@@ -4,152 +4,257 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Calendar, Users, MapPin, Target, Camera, ExternalLink } from 'lucide-react';
+import { Calendar, Users, MapPin, Target, ExternalLink } from 'lucide-react';
+
+const projectsByYear = {
+  '2022': [
+    {
+      title: 'Panel Discussion: Setbacks and the Way Forward for Good Pharmacy Practice in Nigeria',
+      tags: ['Advocacy', 'Completed'],
+      goal: 'To discuss the current state of Good Pharmacy Practice (GPP) in Nigeria and chart strategic paths for reform.',
+      outcomes: [
+        '5 expert panelists across academia and practice',
+        '100+ pharmacy students registered',
+        'Catalyzed student-led GPP reform discussions',
+      ],
+      location: 'Virtual',
+      date: 'June 3, 2022',
+      media: 'https://www.youtube.com/watch?v=4G_UKPzzwcQ',
+    },
+  ],
+  '2023': [
+    {
+      title: 'Navigating the Nigerian Pharm.D Program',
+      tags: ['Training & Workshops', 'Completed'],
+      goal: 'To highlight the benefits, requirements, and expectations of the Nigerian Pharm.D program.',
+      outcomes: [
+        '113 student participants',
+        'Panel included recent Pharm.D graduates and students studying abroad',
+      ],
+      location: 'Virtual',
+      date: 'April 15, 2023',
+      media: 'https://www.youtube.com/watch?v=z7-xhFhqM94&t=22s',
+    },
+    {
+      title: 'Scholarship Opportunities for Nigerian Pharmacy Students',
+      tags: ['Training & Workshops', 'Completed'],
+      goal: 'To share local and global scholarship opportunities available to Nigerian pharmacy students.',
+      outcomes: [
+        '178 student participants',
+        'Resources shared by students currently in funded programs',
+      ],
+      location: 'Virtual',
+      date: 'April 29, 2023',
+      media: 'https://www.youtube.com/watch?v=fs0ic_ah75U&t=1s',
+    },
+    {
+      title: 'Future of Healthcare: Role of Pharmacists',
+      tags: ['Training & Workshops', 'Completed'],
+      goal: 'To discuss the evolving roles of pharmacists in healthcare and GPP’s impact on health systems.',
+      outcomes: [
+        '8 participants',
+        'Led by a hospital pharmacist from UCH Ibadan',
+      ],
+      location: 'Virtual',
+      date: 'September 24, 2023',
+    },
+    {
+      title: 'The Silent Movement Project | African Youth AMR 1.0 Hackathon (IPSF-AFRO)',
+      tags: ['Advocacy', 'Completed'],
+      goal: 'A contest to educate secondary school students on antimicrobial resistance and raise youth advocates.',
+      outcomes: [
+        'The TCPPP-OAU project reached the final round of the national Track B competition',
+        '5 student pharmacists in antimicrobial resistance advocacy',
+      ],
+      location: 'Ibadan',
+      date: 'November 2023',
+    },
+    {
+      title: 'Good Pharmacy Practice Essay Contest',
+      tags: ['Competition', 'Completed'],
+      goal: 'To promote written dialogue on pharmacy practice challenges and solutions in Nigeria.',
+      outcomes: [
+        '39 applicants from 10+ pharmacy schools',
+        '15 finalists, 3 winners awarded and published',
+      ],
+      location: 'Nationwide',
+      date: 'October 2023',
+    },
+    {
+      title: 'Free Medical/SEO Writing Training – International Day of the Girl Child',
+      tags: ['Advocacy', 'Completed'],
+      goal: 'To train the next generation of women pharmacy advocates who will champion Good Pharmacy Practice through writing.',
+      outcomes: [
+        '9 applicants, 5 accepted student pharmacists, 2 graduated student pharmacists',
+      ],
+      partners: ['BAS'],
+      location: 'Online',
+      date: 'Nov 11, 2023 – Mar 17, 2024',
+    },
+  ],
+  '2024': [
+    {
+      title: 'Becoming an Outstanding Leader in Pharmacy School',
+      tags: ['Professional Development', 'Completed'],
+      goal: 'To build students\' leadership and decision-making skills.',
+      outcomes: [
+        '97 participants',
+        'Insights from PSN-YPG and health innovation leaders',
+      ],
+      location: 'Virtual',
+      date: 'Jan 27, 2024',
+      media: 'https://www.youtube.com/watch?v=NmNaxWAkX30',
+    },
+    {
+      title: 'Pharmacy Profession Awareness – Secondary School Outreach',
+      tags: ['Community Outreach', 'Completed'],
+      goal: 'To educate students about pharmacy career paths and healthcare roles.',
+      outcomes: [
+        'Reached 40+ students',
+        'First in a series of youth-targeted education initiatives',
+      ],
+      location: 'Ibadan',
+      date: 'Feb 14, 2024',
+    },
+    {
+      title: 'UI-SU Health Fair: Holistic Wellness',
+      tags: ['Community Outreach', 'Completed'],
+      goal: 'To promote preventive care and accessible wellness resources for students.',
+      outcomes: [
+        '300+ students attended',
+        'Screenings, cancer awareness, and nutrition stations',
+      ],
+      partners: ['Team Rebirth, Panacea, UI Public Health Team, Lakeshore Cancer Center'],
+      location: 'University of Ibadan',
+      date: 'Mar 5, 2024',
+    },
+    {
+      title: 'Developing the Leader in You',
+      tags: ['Professional Development', 'Completed'],
+      goal: 'To strengthen students\' leadership potential within and beyond pharmacy school.',
+      outcomes: [
+        'Featured National PANS President',
+        '43 participants',
+      ],
+      location: 'Virtual',
+      date: 'Aug 10, 2024',
+    },
+    {
+      title: 'Mental Health Balance in Pharmacy School',
+      tags: ['Professional Development', 'Completed'],
+      goal: 'To guide students in maintaining mental wellness amid academic demands.',
+      outcomes: [
+        'Practical tips and relatable dialogue',
+      ],
+      location: 'Virtual',
+      date: 'Aug 17, 2024',
+    },
+    {
+      title: 'World Pharmacist Day Campaign (3-Day Series)',
+      tags: ['Awareness Campaign', 'Completed'],
+      goal: 'To recognize pharmacists\' impact and promote system-wide motivation.',
+      outcomes: [
+        'Recognized pharmacists\' impact and promoted system-wide motivation',
+      ],
+      location: 'Virtual',
+      date: 'Sept 23–25, 2024',
+    },
+    {
+      title: 'World Mental Health Day Campaign',
+      tags: ['Awareness Campaign', 'Completed'],
+      goal: 'To emphasize the importance of mental well-being among healthcare professionals.',
+      outcomes: [
+        'Emphasized the importance of mental well-being among healthcare professionals',
+      ],
+      location: 'Virtual',
+      date: 'Oct 10, 2024',
+    },
+    {
+      title: 'Together for Better Care – Interprofessional Workshop',
+      tags: ['Training & Workshops', 'Completed'],
+      goal: 'To enhance cross-professional collaboration among healthcare trainees.',
+      outcomes: [
+        'Participation from nurses, pharmacists, doctors, PTs, 20+ attendees via Twitter Space',
+      ],
+      location: 'Virtual',
+      date: 'Nov 23, 2024',
+    },
+    {
+      title: '15-Day Health & Wellness Social Media Series',
+      tags: ['Awareness Campaign', 'Completed'],
+      goal: 'To offer daily wellness tips tailored to pharmacy students.',
+      outcomes: [
+        'Daily wellness tips tailored to pharmacy students',
+      ],
+      location: 'Online',
+      date: 'Nov 27–Dec 16, 2024',
+    },
+    {
+      title: 'Pharmacy Practice in Nigeria: What Gap is Left to be Filled?',
+      tags: ['Training & Workshops', 'Completed'],
+      goal: 'To explore existing challenges and actionable reforms in Nigerian pharmacy practice.',
+      outcomes: [
+        'Over 130 participants',
+        'Led by the MD/CEO of Victory Drugs, Lagos',
+      ],
+      location: 'Virtual',
+      date: 'Dec 21, 2024',
+      media: 'https://www.youtube.com/watch?v=2r7YU-lxVCE',
+    },
+  ],
+  '2025': [
+    {
+      title: 'Hangout 1.0: Reflecting on Its Journey and Inspiring Impactful Volunteering',
+      tags: ['Student Engagement', 'Completed'],
+      goal: 'To celebrate volunteers and reflect on impactful service through a team bonding event.',
+      outcomes: [
+        '15+ active volunteers engaged',
+        'Vision sharing and renewed commitment to advocacy',
+      ],
+      location: 'University of Ibadan',
+      date: 'Feb 20, 2025',
+    },
+    {
+      title: 'Mentorship: Role in Professional Development',
+      tags: ['Professional Development', 'Completed'],
+      goal: 'To educate pharmacy students on how to approach mentorship and mentor interactions in a professional setting.',
+      outcomes: [
+        '40+ participants',
+        'Featured two expert facilitators on professional growth and mentoring',
+      ],
+      location: 'Virtual (OAU)',
+      date: 'Mar 14–15, 2025',
+      media: 'https://www.youtube.com/watch?v=2g920BMgSP8',
+    },
+    {
+      title: 'World Oral Health Day Social Media Campaign',
+      tags: ['Awareness Campaign', 'Completed'],
+      goal: 'To raise awareness on oral health care practices among pharmacy students and the general public.',
+      outcomes: [
+        'High engagement campaign across social platforms',
+        'Advocacy messages tailored to preventive oral care',
+      ],
+      location: 'Online (UI)',
+      date: 'Mar 20, 2025',
+    },
+    {
+      title: 'Drug Abuse & Misuse Outreach – Richgates Divine School, Ibadan',
+      tags: ['Community Outreach', 'Completed'],
+      goal: 'To educate secondary school students on the dangers of drug abuse and misuse.',
+      outcomes: [
+        'Reached 50+ students',
+        'An interactive session and feedback from school officials',
+      ],
+      location: 'Ibadan',
+      date: 'June 26, 2025',
+    },
+  ],
+};
 
 const Projects = () => {
-  const projects = {
-    2024: [
-      {
-        title: 'Mental Health First Aid Training Program',
-        description: 'Comprehensive mental health literacy program targeting university students and community members across Nigerian universities.',
-        impact: '500+ students trained, 15+ universities reached',
-        location: 'Multi-state initiative',
-        duration: 'January - December 2024',
-        status: 'Ongoing',
-        category: 'Mental Health',
-        partners: ['Nigerian Mental Health Association', 'University Health Centers'],
-        outcomes: [
-          'Reduced stigma around mental health issues',
-          'Increased help-seeking behavior among students',
-          'Established peer support networks on campuses'
-        ]
-      },
-      {
-        title: 'Community Health Data Analytics Project',
-        description: 'Leveraging data science to identify health trends and support evidence-based decision making in underserved communities.',
-        impact: '20+ communities analyzed, 5 policy recommendations developed',
-        location: 'Southwest Nigeria',
-        duration: 'March - November 2024',
-        status: 'Active',
-        category: 'Public Health',
-        partners: ['State Ministry of Health', 'Local Government Areas'],
-        outcomes: [
-          'Improved health data collection systems',
-          'Identified key health priorities for resource allocation',
-          'Enhanced community health surveillance'
-        ]
-      }
-    ],
-    2023: [
-      {
-        title: 'Maternal Health Advocacy Campaign',
-        description: 'Multi-channel advocacy campaign addressing maternal mortality through policy engagement and community education.',
-        impact: '10,000+ women reached, 3 policy briefs published',
-        location: 'Oyo and Osun States',
-        duration: 'February - December 2023',
-        status: 'Completed',
-        category: 'Maternal Health',
-        partners: ['Save the Children Nigeria', 'State Health Insurance Agencies'],
-        outcomes: [
-          'Increased awareness of maternal health rights',
-          'Policy changes in state health insurance coverage',
-          'Strengthened referral systems in rural areas'
-        ]
-      },
-      {
-        title: 'Student Leadership in Health Innovation Challenge',
-        description: 'Competition-based program encouraging students to develop innovative solutions to local health challenges.',
-        impact: '200+ participants, 25 innovative solutions developed',
-        location: 'Nigeria-wide',
-        duration: 'June - December 2023',
-        status: 'Completed',
-        category: 'Innovation',
-        partners: ['UNICEF Nigeria', 'Nigeria Health Tech Alliance'],
-        outcomes: [
-          'Developed prototype health technologies',
-          'Created network of student innovators',
-          'Attracted funding for top solutions'
-        ]
-      },
-      {
-        title: 'Rural Primary Healthcare Strengthening Initiative',
-        description: 'Collaborative effort to improve healthcare delivery in rural communities through capacity building and resource mobilization.',
-        impact: '50 health workers trained, 15 health facilities upgraded',
-        location: 'Rural communities in Ogun State',
-        duration: 'April - October 2023',
-        status: 'Completed',
-        category: 'Healthcare Delivery',
-        partners: ['Primary Healthcare Development Agency', 'Community Leaders'],
-        outcomes: [
-          'Improved quality of primary healthcare services',
-          'Enhanced community health worker capabilities',
-          'Increased community engagement in health planning'
-        ]
-      }
-    ],
-    2022: [
-      {
-        title: 'COVID-19 Vaccine Hesitancy Intervention',
-        description: 'Evidence-based communication strategy to address vaccine hesitancy and increase uptake in university communities.',
-        impact: '75% increase in vaccination rates, 20+ universities participated',
-        location: 'University communities nationwide',
-        duration: 'March - November 2022',
-        status: 'Completed',
-        category: 'Infectious Disease',
-        partners: ['NCDC', 'University Health Centers', 'WHO Nigeria'],
-        outcomes: [
-          'Significant increase in vaccine acceptance',
-          'Reduced spread of misinformation',
-          'Established trust between students and health authorities'
-        ]
-      },
-      {
-        title: 'Youth Sexual and Reproductive Health Program',
-        description: 'Comprehensive sexual and reproductive health education program targeting adolescents and young adults.',
-        impact: '2,000+ young people reached, 100+ peer educators trained',
-        location: 'Lagos and Ibadan',
-        duration: 'January - December 2022',
-        status: 'Completed',
-        category: 'Sexual Health',
-        partners: ['Marie Stopes Nigeria', 'Youth Development Centers'],
-        outcomes: [
-          'Improved knowledge of reproductive health',
-          'Increased access to family planning services',
-          'Reduced teenage pregnancy rates in target areas'
-        ]
-      }
-    ]
-  };
-
-  const getStatusColor = (status: string) => {
-    switch (status.toLowerCase()) {
-      case 'ongoing':
-      case 'active':
-        return 'bg-green-100 text-green-800 dark:bg-green-900/20 dark:text-green-400';
-      case 'completed':
-        return 'bg-blue-100 text-blue-800 dark:bg-blue-900/20 dark:text-blue-400';
-      default:
-        return 'bg-gray-100 text-gray-800 dark:bg-gray-900/20 dark:text-gray-400';
-    }
-  };
-
-  const getCategoryColor = (category: string) => {
-    const colors = {
-      'Mental Health': 'bg-purple-100 text-purple-800 dark:bg-purple-900/20 dark:text-purple-400',
-      'Public Health': 'bg-hapi-bright-green/20 text-hapi-dark-green dark:bg-hapi-bright-green/20 dark:text-hapi-bright-green',
-      'Maternal Health': 'bg-pink-100 text-pink-800 dark:bg-pink-900/20 dark:text-pink-400',
-      'Innovation': 'bg-orange-100 text-orange-800 dark:bg-orange-900/20 dark:text-orange-400',
-      'Healthcare Delivery': 'bg-indigo-100 text-indigo-800 dark:bg-indigo-900/20 dark:text-indigo-400',
-      'Infectious Disease': 'bg-red-100 text-red-800 dark:bg-red-900/20 dark:text-red-400',
-      'Sexual Health': 'bg-teal-100 text-teal-800 dark:bg-teal-900/20 dark:text-teal-400'
-    };
-    return colors[category as keyof typeof colors] || 'bg-gray-100 text-gray-800 dark:bg-gray-900/20 dark:text-gray-400';
-  };
-
   return (
     <div className="min-h-screen bg-white dark:bg-hapi-dark-green transition-colors duration-300">
       <Navigation />
-      
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-white via-green-50/30 to-emerald-50/50 dark:from-hapi-dark-green dark:via-hapi-dark-green/90 dark:to-hapi-dark-green/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -164,116 +269,7 @@ const Projects = () => {
           </div>
         </div>
       </section>
-
-      {/* Projects by Year */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {Object.entries(projects)
-            .sort(([a], [b]) => parseInt(b) - parseInt(a))
-            .map(([year, yearProjects]) => (
-              <div key={year} className="mb-20">
-                <div className="text-center mb-16">
-                  <h2 className="text-4xl font-aida font-bold text-hapi-dark-green dark:text-white mb-4">
-                    {year} Projects
-                  </h2>
-                  <div className="w-24 h-1 bg-hapi-bright-green mx-auto rounded-full"></div>
-                </div>
-
-                <div className="space-y-8">
-                  {yearProjects.map((project, index) => (
-                    <Card key={index} className="hover:shadow-xl transition-all duration-300 hover:scale-[1.02] border-green-100 dark:border-hapi-bright-green/20 bg-white dark:bg-hapi-dark-green/20">
-                      <CardHeader>
-                        <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
-                          <div className="flex-1">
-                            <div className="flex flex-wrap items-center gap-3 mb-3">
-                              <Badge className={getCategoryColor(project.category)}>
-                                {project.category}
-                              </Badge>
-                              <Badge className={getStatusColor(project.status)}>
-                                {project.status}
-                              </Badge>
-                            </div>
-                            <CardTitle className="font-aida text-2xl text-hapi-dark-green dark:text-white mb-2">
-                              {project.title}
-                            </CardTitle>
-                            <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                              {project.description}
-                            </p>
-                          </div>
-                          
-                          <div className="lg:w-80 bg-hapi-bright-green/5 dark:bg-hapi-bright-green/10 rounded-xl p-4">
-                            <div className="space-y-3">
-                              <div className="flex items-center gap-2 text-sm">
-                                <Target className="h-4 w-4 text-hapi-bright-green" />
-                                <span className="text-gray-600 dark:text-gray-300">{project.impact}</span>
-                              </div>
-                              <div className="flex items-center gap-2 text-sm">
-                                <MapPin className="h-4 w-4 text-hapi-bright-green" />
-                                <span className="text-gray-600 dark:text-gray-300">{project.location}</span>
-                              </div>
-                              <div className="flex items-center gap-2 text-sm">
-                                <Calendar className="h-4 w-4 text-hapi-bright-green" />
-                                <span className="text-gray-600 dark:text-gray-300">{project.duration}</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </CardHeader>
-                      
-                      <CardContent className="space-y-6">
-                        {/* Partners */}
-                        <div>
-                          <h4 className="font-aida font-semibold text-hapi-dark-green dark:text-white mb-3 flex items-center gap-2">
-                            <Users className="h-4 w-4 text-hapi-bright-green" />
-                            Key Partners
-                          </h4>
-                          <div className="flex flex-wrap gap-2">
-                            {project.partners.map((partner, partnerIndex) => (
-                              <Badge key={partnerIndex} variant="outline" className="text-xs">
-                                {partner}
-                              </Badge>
-                            ))}
-                          </div>
-                        </div>
-
-                        {/* Key Outcomes */}
-                        <div>
-                          <h4 className="font-aida font-semibold text-hapi-dark-green dark:text-white mb-3">
-                            Key Outcomes
-                          </h4>
-                          <ul className="space-y-2">
-                            {project.outcomes.map((outcome, outcomeIndex) => (
-                              <li key={outcomeIndex} className="text-sm text-gray-600 dark:text-gray-300 flex items-start gap-2">
-                                <div className="w-1.5 h-1.5 bg-hapi-bright-green rounded-full mt-2 flex-shrink-0"></div>
-                                <span>{outcome}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-
-                        {/* Project Gallery Placeholder */}
-                        <div className="border-t border-gray-200 dark:border-hapi-bright-green/20 pt-4">
-                          <div className="flex items-center justify-between">
-                            <div className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400">
-                              <Camera className="h-4 w-4" />
-                              <span>Project media and documentation available</span>
-                            </div>
-                            <button className="text-hapi-bright-green hover:text-hapi-bright-green/80 text-sm font-medium flex items-center gap-1">
-                              View Details
-                              <ExternalLink className="h-3 w-3" />
-                            </button>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  ))}
-                </div>
-              </div>
-            ))}
-        </div>
-      </section>
-
-      {/* Impact Summary */}
+      {/* Cumulative Impact (moved up) */}
       <section className="py-20 bg-gray-50 dark:bg-hapi-dark-green/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -284,39 +280,107 @@ const Projects = () => {
               Our collective achievements across all projects and initiatives
             </p>
           </div>
-
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Card className="text-center hover:shadow-lg transition-shadow duration-300 border-green-100 dark:border-hapi-bright-green/20 bg-white dark:bg-hapi-dark-green/20">
               <CardContent className="p-6">
-                <div className="text-3xl font-bold text-hapi-bright-green mb-2">15,000+</div>
+                <div className="text-3xl font-bold text-hapi-bright-green mb-2">1,400+</div>
                 <div className="text-sm text-gray-600 dark:text-gray-300">People Reached</div>
               </CardContent>
             </Card>
-
-            <Card className="text-center hover:shadow-lg transition-shadow duration-300 border-green-100 dark:border-hapi-bright-green/20 bg-white dark:bg-hapi-dark-green/20">
-              <CardContent className="p-6">
-                <div className="text-3xl font-bold text-hapi-bright-green mb-2">50+</div>
-                <div className="text-sm text-gray-600 dark:text-gray-300">Projects Completed</div>
-              </CardContent>
-            </Card>
-
             <Card className="text-center hover:shadow-lg transition-shadow duration-300 border-green-100 dark:border-hapi-bright-green/20 bg-white dark:bg-hapi-dark-green/20">
               <CardContent className="p-6">
                 <div className="text-3xl font-bold text-hapi-bright-green mb-2">25+</div>
-                <div className="text-sm text-gray-600 dark:text-gray-300">Partner Organizations</div>
+                <div className="text-sm text-gray-600 dark:text-gray-300">Projects Completed</div>
               </CardContent>
             </Card>
-
             <Card className="text-center hover:shadow-lg transition-shadow duration-300 border-green-100 dark:border-hapi-bright-green/20 bg-white dark:bg-hapi-dark-green/20">
               <CardContent className="p-6">
                 <div className="text-3xl font-bold text-hapi-bright-green mb-2">10+</div>
+                <div className="text-sm text-gray-600 dark:text-gray-300">Partner Organizations</div>
+              </CardContent>
+            </Card>
+            <Card className="text-center hover:shadow-lg transition-shadow duration-300 border-green-100 dark:border-hapi-bright-green/20 bg-white dark:bg-hapi-dark-green/20">
+              <CardContent className="p-6">
+                <div className="text-3xl font-bold text-hapi-bright-green mb-2">7</div>
                 <div className="text-sm text-gray-600 dark:text-gray-300">States Covered</div>
               </CardContent>
             </Card>
           </div>
         </div>
       </section>
-
+      {/* Projects by Year (descending order) */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {["2025", "2024", "2023", "2022"].map(year => (
+            projectsByYear[year] && (
+              <div key={year} className="mb-20">
+                <div className="text-center mb-16">
+                  <h2 className="text-4xl font-aida font-bold text-hapi-dark-green dark:text-white mb-4">
+                    {year} Projects
+                  </h2>
+                  <div className="w-24 h-1 bg-hapi-bright-green mx-auto rounded-full"></div>
+                </div>
+                <div className="grid md:grid-cols-2 gap-8">
+                  {projectsByYear[year].map((project, idx) => (
+                    <Card key={idx} className="hover:shadow-xl transition-all duration-300 hover:scale-[1.02] border-green-100 dark:border-hapi-bright-green/20 bg-white dark:bg-hapi-dark-green/20">
+                      <CardHeader>
+                        <div className="flex flex-wrap items-center gap-3 mb-3">
+                          {project.tags && project.tags.map((tag, i) => (
+                            <Badge key={i} variant="outline" className="text-xs">
+                              {tag}
+                            </Badge>
+                          ))}
+                        </div>
+                        <CardTitle className="font-aida text-2xl text-hapi-dark-green dark:text-white mb-2">
+                          {project.title}
+                        </CardTitle>
+                        <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-2">
+                          <b>Goal:</b> {project.goal}
+                        </p>
+                        <div className="flex flex-wrap gap-2 text-sm text-gray-500 dark:text-gray-400 mb-2">
+                          <MapPin className="h-4 w-4" /> {project.location}
+                          <Calendar className="h-4 w-4 ml-4" /> {project.date}
+                        </div>
+                      </CardHeader>
+                      <CardContent className="space-y-4">
+                        {project.outcomes && (
+                          <div>
+                            <h4 className="font-semibold text-hapi-dark-green dark:text-white mb-1">Key Outcomes</h4>
+                            <ul className="list-disc pl-5">
+                              {project.outcomes.map((outcome, i) => (
+                                <li key={i} className="text-sm text-gray-600 dark:text-gray-300">{outcome}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+                        {project.partners && (
+                          <div>
+                            <h4 className="font-semibold text-hapi-dark-green dark:text-white mb-1">Key Partners</h4>
+                            <div className="flex flex-wrap gap-2">
+                              {project.partners.map((partner, i) => (
+                                <Badge key={i} variant="outline" className="text-xs">
+                                  {partner}
+                                </Badge>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+                        {project.media && (
+                          <a href={project.media} target="_blank" rel="noopener noreferrer">
+                            <button className="mt-2 px-4 py-2 bg-hapi-bright-green text-white rounded hover:bg-hapi-bright-green/90 flex items-center gap-2">
+                              View Media <ExternalLink className="h-4 w-4" />
+                            </button>
+                          </a>
+                        )}
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
+              </div>
+            )
+          ))}
+        </div>
+      </section>
       <Footer />
     </div>
   );

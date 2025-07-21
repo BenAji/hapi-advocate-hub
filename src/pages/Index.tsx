@@ -225,47 +225,26 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 md:grid-cols-1">
             <Card className="hover:shadow-lg transition-shadow duration-300 border-green-100 dark:border-hapi-bright-green/20 bg-white dark:bg-hapi-dark-green/20">
               <CardHeader>
                 <div className="flex items-center gap-3">
                   <Calendar className="h-5 w-5 text-hapi-bright-green" />
-                  <CardTitle className="font-aida text-hapi-dark-green dark:text-white">Health Advocacy Workshop</CardTitle>
+                  <CardTitle className="font-aida text-hapi-dark-green dark:text-white">GPP Compliance Research</CardTitle>
                 </div>
                 <CardDescription className="text-gray-600 dark:text-gray-300">
-                  • Virtual training on policy and strategy
-
+                  Ongoing study on pharmacy standards in Nigeria.
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  Join us for an interactive workshop on effective health advocacy strategies 
-                  and policy engagement for students and young professionals.
+                  Join us in a descriptive study exploring the challenges Nigerian community pharmacists face in complying with Good Pharmacy Practice (GPP) standards in day-to-day operations.
                 </p>
-                <Button className="bg-hapi-bright-green hover:bg-hapi-bright-green/90 text-white">
-                  Register Now
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-lg transition-shadow duration-300 border-green-100 dark:border-hapi-bright-green/20 bg-white dark:bg-hapi-dark-green/20">
-              <CardHeader>
-                <div className="flex items-center gap-3">
-                  <Calendar className="h-5 w-5 text-hapi-bright-green" />
-                  <CardTitle className="font-aida text-hapi-dark-green dark:text-white">Community Health Fair</CardTitle>
-                </div>
-                <CardDescription className="text-gray-600 dark:text-gray-300">
-                  • On-ground engagement and screenings
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  A community-wide health screening and education event featuring 
-                  free health checks and wellness education sessions.
-                </p>
-                <Button className="bg-hapi-bright-green hover:bg-hapi-bright-green/90 text-white">
-                  Learn More
-                </Button>
+                <a href="mailto:hapinitiativeorg@gmail.com">
+                  <Button className="bg-hapi-bright-green hover:bg-hapi-bright-green/90 text-white">
+                    Learn more
+                  </Button>
+                </a>
               </CardContent>
             </Card>
           </div>

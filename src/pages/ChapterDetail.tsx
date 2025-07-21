@@ -24,7 +24,7 @@ const ChapterDetail = () => {
         {
           title: 'Community Health Outreach',
           description: 'Hosting education programs and awareness drives (e.g., antimicrobial stewardship campaigns, pharmacy professional awareness in schools) to improve population-level health literacy and patient safety.',
-          impact: '5,000+ community members reached'
+          impact: '300+ community members reached'
         },
         {
           title: 'Professional Development',
@@ -66,15 +66,13 @@ const ChapterDetail = () => {
           role: 'Secretary',
           year: '4th Year Pharmacy Student',
           bio: 'Communication, documentation, and event coordination'
-        }
-        ,
+        },
         {
           name: 'Stella Olugbo',
           role: 'Graphic Designer',
-          year: '2nd Year Pharmacy Student',
+          year: '3rd Year',
           bio: 'Visual Story telling and Digital Health Promotion'
-        }
-        ,
+        },
         {
           name: 'Favour Aremu',
           role: 'Immediate Past Student Rep',
@@ -106,114 +104,83 @@ const ChapterDetail = () => {
         }
       ],
       achievements: [
-        'Winner of Best Student Chapter Award - Nigeria Health Students Association 2023',
-        'Successfully advocated for improved student health services on campus',
-        'Established partnership with Obafemi Awolowo University Teaching Hospital',
-        'Published research on student mental health in Nigerian Journal of Community Health',
-        'Organized largest student-led health conference in Southwest Nigeria'
+        'Finalists (Track B) - African Youth AMR 1.0 Hackathon | IPSF-AFRO'
       ],
       contact: {
-        email: 'oau@hapi-initiative.org',
-        meetingTime: 'Every Saturday, 2:00 PM',
-        meetingLocation: 'Faculty of Health Sciences, OAU',
-        socialMedia: {
-          instagram: '@hapi_oau',
-          twitter: '@HAPIoau',
-          whatsapp: '+234-xxx-xxx-xxxx'
-        }
-      }
+        email: 'tomabless2018@gmail.com',
+        meetingTime: 'Monday - Friday',
+        meetingLocation: 'Faculty of Pharmacy, Obafemi Awolowo University',
+      },
+      joinForm: 'https://forms.gle/qwv5HHZM3ub6SCDu6',
+      contactMailto: 'mailto:tomabless2018@gmail.com',
     },
     ui: {
       name: 'UI Chapter',
       university: 'University of Ibadan',
       fullName: 'University of Ibadan Chapter',
       location: 'Ibadan, Oyo State, Nigeria',
-      established: 'April 2022',
-      members: '60+',
-      description: 'The University of Ibadan Chapter of H.A.P.I. represents the pioneering spirit of Nigeria\'s first university in health advocacy and professional development. Our chapter combines academic excellence with practical community engagement to create meaningful health impact.',
-      mission: 'To leverage the rich academic heritage of UI in advancing health equity, policy advocacy, and professional excellence among health science students and beyond.',
+      established: 'April 10, 2023',
+      members: '15+',
+      description: `The University of Ibadan Chapter of H.A.P.I. builds on UI’s legacy of academic excellence and community engagement to advocate for better pharmacy practice, promote public health awareness, and empower the next generation of student leaders.`,
+      mission: `To promote health advocacy and professional development among pharmacy students at the University of Ibadan by fostering leadership, research collaboration, and community health education. We empower students to champion equity and awareness through school outreaches, health campaigns, and policy engagement initiatives.`,
       activities: [
         {
-          title: 'Policy Advocacy Training',
-          description: 'Workshops on health policy analysis and advocacy strategies',
-          impact: '150+ students trained in policy advocacy'
+          title: 'Community Engagement for Youth Health Awareness',
+          description: 'Interactive health education sessions in secondary schools to inspire healthier habits and career interests in healthcare.',
+          impact: 'One school reached in Oyo State'
         },
         {
-          title: 'Research Collaboration Network',
-          description: 'Connecting students with faculty for meaningful research opportunities',
-          impact: '25+ collaborative research projects'
+          title: 'Digital Health Campaigns',
+          description: 'Social media initiatives like World Oral Health Day and the Health/Wellness Tips Series to increase public awareness of key health issues.',
+          impact: '2,000+ combined digital impressions'
         },
         {
-          title: 'Community Health Integration',
-          description: 'Working with local health facilities on improvement initiatives',
-          impact: '8 health facilities partnered'
+          title: 'Student Development & Leadership',
+          description: 'Semesterly webinars and skill-building workshops designed to strengthen leadership, ethics, and career readiness.',
+          impact: '200+ student participants'
         },
         {
-          title: 'Professional Mentorship Program',
-          description: 'Structured mentoring relationships with health professionals',
-          impact: '120+ active mentorship pairs'
+          title: 'Public Health Outreach',
+          description: 'Health fairs and screening events on campus, with counseling, medication reviews, and free consultations.',
+          impact: '300+ students served'
         }
       ],
       leadership: [
-        {
-          name: 'Chinonso Okafor',
-          role: 'Chapter President',
-          year: '5th Year Medical Student',
-          bio: 'Research enthusiast with focus on infectious disease epidemiology'
-        },
-        {
-          name: 'Aisha Abdullahi',
-          role: 'Vice President',
-          year: '4th Year Dentistry Student',
-          bio: 'Advocate for oral health promotion and preventive care'
-        },
-        {
-          name: 'Emeka Nwankwo',
-          role: 'Secretary',
-          year: '3rd Year Physiotherapy Student',
-          bio: 'Passionate about rehabilitation medicine and health technology'
-        },
-        {
-          name: 'Kemi Adebisi',
-          role: 'Research Coordinator',
-          year: '4th Year Medical Laboratory Science Student',
-          bio: 'Focused on diagnostic innovation and health informatics'
-        }
+        { name: 'Priscilla Ajayi', role: 'Student Representative', year: 'Pharmacy – 3rd Year' },
+        { name: 'Khadijat Shonibare', role: 'Co-Student Representative', year: 'Pharmacy – 5th Year' },
+        { name: 'Testimony Adeleke', role: 'General Secretary', year: 'Pharmacy – 3rd Year' },
+        { name: 'Abraham Ogunlowo', role: 'Programs Coordinator', year: 'Pharmacy – 4th Year' },
+        { name: 'Clement Ojo', role: 'Co-Programs Coordinator', year: 'Pharmacy – 4th Year' },
+        { name: 'Grace Akande', role: 'Financial Secretary', year: 'Pharmacy – 3rd Year' },
+        { name: 'Olakulehin Adebusuyi', role: 'Immediate Past Student Rep', year: 'Pharmacy – 5th Year' },
       ],
       recentEvents: [
         {
-          title: 'National Health Policy Forum',
-          date: 'March 2024',
-          description: 'Students engaging with policymakers on healthcare reform'
+          title: 'Hangout 1.0: Reflecting on our Journey',
+          date: 'February 20, 2025',
+          description: 'A community-building event that brought together members to reflect, share stories, and inspire a stronger commitment to service and health advocacy.'
         },
         {
-          title: 'Innovation in Healthcare Conference',
-          date: 'February 2024',
-          description: 'Showcasing student innovations in health technology'
+          title: 'World Oral Health Day Social Media Campaign',
+          date: 'March 20, 2025',
+          description: 'An online campaign to promote oral health awareness, reaching over 1,000 users with preventive health tips and advocacy messages.'
         },
         {
-          title: 'Community Health Research Symposium',
-          date: 'January 2024',
-          description: 'Presenting student research on local health challenges'
+          title: 'Richgates Divine School Outreach',
+          date: 'June 26, 2025',
+          description: 'A secondary school health outreach educating students on drug abuse and misuse. This event is part of our ongoing youth engagement initiative in Ibadan.'
         }
       ],
       achievements: [
-        'Recipient of National Student Health Advocacy Award 2023',
-        'Published 10+ peer-reviewed papers in collaboration with faculty',
-        'Secured funding for 5 community health improvement projects',
-        'Established UI-H.A.P.I. Research Excellence Scholarship',
-        'Created policy brief that influenced state health legislation'
+        'Outstanding Service Award — Olakulehin Adebusuyi recognized by PANS UI for student leadership (2023/2024)'
       ],
       contact: {
-        email: 'ui@hapi-initiative.org',
-        meetingTime: 'Every Friday, 4:00 PM',
-        meetingLocation: 'College of Medicine, UI',
-        socialMedia: {
-          instagram: '@hapi_ui',
-          twitter: '@HAPIUI',
-          whatsapp: '+234-xxx-xxx-xxxx'
-        }
-      }
+        email: 'priscillaajayi00@gmail.com',
+        meetingTime: 'Monday - Friday',
+        meetingLocation: 'Faculty of Pharmacy, University of Ibadan',
+      },
+      joinForm: 'https://forms.gle/MwkEsFPiE5PuBgTb6',
+      contactMailto: 'mailto:priscillaajayi00@gmail.com',
     }
   };
 
@@ -438,16 +405,52 @@ const ChapterDetail = () => {
             Join our dynamic community of student leaders.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-hapi-bright-green hover:bg-hapi-bright-green/90 text-white px-8 py-4">
-              Apply to Join Chapter
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-hapi-dark-green text-hapi-dark-green hover:bg-hapi-dark-green hover:text-white dark:border-hapi-bright-green dark:text-hapi-bright-green dark:hover:bg-hapi-bright-green dark:hover:text-hapi-dark-green px-8 py-4"
-            >
-              Contact Chapter Leaders
-            </Button>
+            {chapterId === 'ui' && (chapter as any).joinForm ? (
+              <a href={(chapter as any).joinForm} target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="bg-hapi-bright-green hover:bg-hapi-bright-green/90 text-white px-8 py-4">
+                  Apply to Join Chapter
+                </Button>
+              </a>
+            ) : chapterId === 'oau' && (chapter as any).joinForm ? (
+              <a href={(chapter as any).joinForm} target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="bg-hapi-bright-green hover:bg-hapi-bright-green/90 text-white px-8 py-4">
+                  Apply to Join Chapter
+                </Button>
+              </a>
+            ) : (
+              <Button size="lg" className="bg-hapi-bright-green hover:bg-hapi-bright-green/90 text-white px-8 py-4">
+                Apply to Join Chapter
+              </Button>
+            )}
+            {chapterId === 'ui' && (chapter as any).contactMailto ? (
+              <a href={(chapter as any).contactMailto} target="_blank" rel="noopener noreferrer">
+                <Button 
+                  variant="outline" 
+                  size="lg"
+                  className="border-hapi-dark-green text-hapi-dark-green hover:bg-hapi-dark-green hover:text-white dark:border-hapi-bright-green dark:text-hapi-bright-green dark:hover:bg-hapi-bright-green dark:hover:text-hapi-dark-green px-8 py-4"
+                >
+                  Contact Chapter Leaders
+                </Button>
+              </a>
+            ) : chapterId === 'oau' && (chapter as any).contactMailto ? (
+              <a href={(chapter as any).contactMailto} target="_blank" rel="noopener noreferrer">
+                <Button 
+                  variant="outline" 
+                  size="lg"
+                  className="border-hapi-dark-green text-hapi-dark-green hover:bg-hapi-dark-green hover:text-white dark:border-hapi-bright-green dark:text-hapi-bright-green dark:hover:bg-hapi-bright-green dark:hover:text-hapi-dark-green px-8 py-4"
+                >
+                  Contact Chapter Leaders
+                </Button>
+              </a>
+            ) : (
+              <Button 
+                variant="outline" 
+                size="lg"
+                className="border-hapi-dark-green text-hapi-dark-green hover:bg-hapi-dark-green hover:text-white dark:border-hapi-bright-green dark:text-hapi-bright-green dark:hover:bg-hapi-bright-green dark:hover:text-hapi-dark-green px-8 py-4"
+              >
+                Contact Chapter Leaders
+              </Button>
+            )}
           </div>
         </div>
       </section>
