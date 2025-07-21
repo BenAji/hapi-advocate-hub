@@ -13,7 +13,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white dark:bg-hapi-dark-green transition-colors duration-300">
       <Helmet>
-        <title>H.A.P.I. Advocate Hub | Health Outcomes, Advocacy, and Professional Development Initiative</title>
+        <title>H.A.P.I. | Health Outcomes, Advocacy, and Professional Development Initiative</title>
         <meta name="description" content="H.A.P.I. is a nonprofit dedicated to strengthening pharmacy practice and transforming healthcare delivery across Nigeria through student leadership, research, advocacy, and compassionate care." />
         <meta name="keywords" content="pharmacy, health advocacy, Nigeria, professional development, student leadership, public health, HAPI, Good Pharmacy Practice, GPP" />
         <meta property="og:title" content="H.A.P.I. Advocate Hub" />
