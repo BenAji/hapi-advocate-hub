@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>H.A.P.I. - Health Outcomes, Advocacy, and Professional Development Initiative</title>
+    <meta name="description" content="Health Outcomes, Advocacy, and Professional Development Initiative - Empowering students and communities through health advocacy and professional development." />
+    <meta name="author" content="H.A.P.I." />
+
+    <meta property="og:title" content="H.A.P.I. - Health Outcomes, Advocacy, and Professional Development Initiative" />
+    <meta property="og:description" content="Empowering students and communities through health advocacy and professional development." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@hapi_org" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    
+    <!-- Favicon - Dynamic based on theme -->
+    <link id="favicon-light" rel="icon" href="/lovable-uploads/25fcd4a4-c32f-4932-a210-331776d35cc6.png" type="image/png">
+    <link id="favicon-dark" rel="icon" href="/lovable-uploads/25fcd4a4-c32f-4932-a210-331776d35cc6.png" type="image/png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" href="/dark.png" />
+    
+    <!-- Google Fonts - Using Lora as a professional serif alternative to AidaBook -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+      // Dynamic favicon switching based on theme
+      function updateFavicon() {
+        const isDark = document.documentElement.classList.contains('dark');
+        const lightFavicon = document.getElementById('favicon-light');
+        const darkFavicon = document.getElementById('favicon-dark');
+        
+        if (isDark) {
+          lightFavicon.href = '/lovable-uploads/25fcd4a4-c32f-4932-a210-331776d35cc6.png';
+          darkFavicon.href = '/lovable-uploads/25fcd4a4-c32f-4932-a210-331776d35cc6.png';
+        } else {
+          lightFavicon.href = '/lovable-uploads/25fcd4a4-c32f-4932-a210-331776d35cc6.png';
+          darkFavicon.href = '/lovable-uploads/25fcd4a4-c32f-4932-a210-331776d35cc6.png';
+        }
+      }
+
+      // Initial favicon update
+      document.addEventListener('DOMContentLoaded', updateFavicon);
+      
+      // Listen for theme changes
+      const observer = new MutationObserver(updateFavicon);
+      observer.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['class']
+      });
+    </script>
+    <script type="module" crossorigin src="/assets/index-mGytVvtj.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BdFVckr7.css">
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
