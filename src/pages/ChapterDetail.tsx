@@ -6,6 +6,8 @@ import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowLeft, MapPin, Users, Calendar, Mail, Award, Camera, ExternalLink } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from '@/components/ui/carousel';
 
 const ChapterDetail = () => {
   const { chapterId } = useParams();
@@ -207,6 +209,15 @@ const ChapterDetail = () => {
 
   return (
     <div className="min-h-screen bg-white dark:bg-hapi-dark-green transition-colors duration-300">
+      <Helmet>
+        <title>{chapter.fullName} | H.A.P.I. Student Chapter</title>
+        <meta name="description" content={`Learn about the ${chapter.fullName} of H.A.P.I. — location, mission, activities, leadership, and achievements.`} />
+        <meta name="keywords" content={`HAPI, ${chapter.name}, ${chapter.university}, pharmacy, health advocacy, Nigeria, student chapter, leadership`} />
+        <meta property="og:title" content={`${chapter.fullName} | H.A.P.I. Student Chapter`} />
+        <meta property="og:description" content={`Learn about the ${chapter.fullName} of H.A.P.I. — location, mission, activities, leadership, and achievements.`} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`https://hapinitiative.org/chapters/${chapterId}`} />
+      </Helmet>
       <Navigation />
       
       {/* Back Navigation */}
@@ -244,6 +255,52 @@ const ChapterDetail = () => {
               {chapter.description}
             </p>
           </div>
+          {/* OAU Carousel - Only show for OAU chapter, now between title/desc and mission */}
+          {chapterId === 'oau' && (
+            <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 my-12">
+              <Carousel className="relative">
+                <CarouselContent>
+                  {[1,2,3,4,5].map(num => (
+                    <CarouselItem key={num}>
+                      <img
+                        src={`/lovable-uploads/OAU ${num}${num === 4 ? '.png' : '.jpg'}`}
+                        alt={`OAU Chapter Activity ${num}`}
+                        className="w-full h-[32rem] object-cover rounded-xl shadow-md"
+                      />
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
+            </div>
+          )}
+          {/* UI Carousel - Only show for UI chapter, between title/desc and mission */}
+          {chapterId === 'ui' && (
+            <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 my-12">
+              <Carousel className="relative">
+                <CarouselContent>
+                  {[
+                    { src: '/lovable-uploads/UI 1.jpg', alt: 'UI Chapter Activity 1' },
+                    { src: '/lovable-uploads/UI 2.jpg', alt: 'UI Chapter Activity 2' },
+                    { src: '/lovable-uploads/UI 3.JPEG', alt: 'UI Chapter Activity 3' },
+                    { src: '/lovable-uploads/UI 4.jpg', alt: 'UI Chapter Activity 4' },
+                    { src: '/lovable-uploads/UI 5.jpg', alt: 'UI Chapter Activity 5' },
+                  ].map((img, idx) => (
+                    <CarouselItem key={idx}>
+                      <img
+                        src={img.src}
+                        alt={img.alt}
+                        className="w-full h-[32rem] object-cover rounded-xl shadow-md"
+                      />
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
+            </div>
+          )}
         </div>
       </section>
 

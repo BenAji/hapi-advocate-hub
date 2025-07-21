@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { MapPin, Users, Calendar, Mail, ArrowRight, Award, BookOpen, Heart } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const Chapters = () => {
   const chapters = [
@@ -13,48 +14,58 @@ const Chapters = () => {
       id: 'oau',
       name: 'OAU Chapter',
       university: 'Obafemi Awolowo University',
-      location: 'Ile-Ife, Osun State',
-      established: '2023',
-      members: '45+',
-      description: 'The OAU Chapter is dedicated to advancing health advocacy and professional development among students at Obafemi Awolowo University. Our initiatives focus on community health engagement, professional development, and and interprofessional collaboration.',
+      location: 'Ile-Ife, Osun State, Nigeria',
+      established: 'August 21, 2023',
+      members: '20+',
+      description: 'The OAU Chapter of the Health Outcomes, Advocacy, and Professional Development Initiative (H.A.P.I.) is a vibrant student-led hub advancing Good Pharmacy Practice (GPP) and compassionate care in Southwestern Nigeria. Founded by forward-thinking pharmacy students, the chapter continues to empower student advocates, elevate professional standards, and make meaningful contributions to good pharmacy practice in Nigeria.',
       achievements: [
-        '5,000+ community members reached through health campaigns',
-        'Trained 200+ students in health advocacy skills',
-        '3 interdisciplinary speaker forums held',
-        'Organized 5+ digital health campaigns '
+        'Finalists (Track B) - African Youth AMR 1.0 Hackathon | IPSF-AFRO'
       ],
       leadership: [
-        { name: 'Mayowa Mulero', role: 'Student Rep' },
-        { name: 'Christopher Aleji', role: 'Co-Student Rep' },
-        { name: 'Ademola Bakenne', role: 'Program Coordinator' }
+        { name: 'Mayowa Mulero', role: 'Student Representative' },
+        { name: 'Christopher Aleji', role: 'Co-Student Representative' },
+        { name: 'Ademola Bakenne', role: 'Program Coordinator' },
+        { name: 'Opeyemi Oyegunle', role: 'Secretary' },
+        { name: 'Stella Olugbo', role: 'Graphic Designer' },
+        { name: 'Favour Aremu', role: 'Immediate Past Student Rep' }
       ],
-      contact: 'oau@hapi-initiative.org'
+      contact: 'tomabless2018@gmail.com'
     },
     {
       id: 'ui',
       name: 'UI Chapter',
       university: 'University of Ibadan',
-      location: 'Ibadan, Oyo State',
-      established: '2022',
-      members: '60+',
-      description: 'The UI Chapter pioneers innovative health solutions and advocacy initiatives at Nigeria\'s premier university. We focus on research-driven interventions, community engagement, and professional mentorship programs.',
+      location: 'Ibadan, Oyo State, Nigeria',
+      established: 'April 10, 2023',
+      members: '15+',
+      description: 'The University of Ibadan Chapter of H.A.P.I. builds on UI’s legacy of academic excellence and community engagement to advocate for better pharmacy practice, promote public health awareness, and empower the next generation of student leaders.',
       achievements: [
-        'Implemented 20+ evidence-based health interventions',
-        'Mentored 150+ students in health careers',
-        'Published 10+ research papers on community health',
-        'Won National Student Health Advocacy Award 2023'
+        'Outstanding Service Award — Olakulehin Adebusuyi recognized by PANS UI for student leadership (2023/2024)'
       ],
       leadership: [
-        { name: 'Chinonso Okafor', role: 'Chapter President' },
-        { name: 'Aisha Abdullahi', role: 'Vice President' },
-        { name: 'Emeka Nwankwo', role: 'Secretary' }
+        { name: 'Priscilla Ajayi', role: 'Student Representative' },
+        { name: 'Khadijat Shonibare', role: 'Co-Student Representative' },
+        { name: 'Testimony Adeleke', role: 'General Secretary' },
+        { name: 'Abraham Ogunlowo', role: 'Programs Coordinator' },
+        { name: 'Clement Ojo', role: 'Co-Programs Coordinator' },
+        { name: 'Grace Akande', role: 'Financial Secretary' },
+        { name: 'Olakulehin Adebusuyi', role: 'Immediate Past Student Rep' }
       ],
-      contact: 'ui@hapi-initiative.org'
+      contact: 'priscillaajayi00@gmail.com'
     }
   ];
 
   return (
     <div className="min-h-screen bg-white dark:bg-hapi-dark-green transition-colors duration-300">
+      <Helmet>
+        <title>H.A.P.I. Student Chapters | Health Advocacy & Leadership in Nigeria</title>
+        <meta name="description" content="Explore H.A.P.I.'s active student chapters driving health advocacy, leadership, and professional development across Nigerian universities." />
+        <meta name="keywords" content="student chapters, HAPI, pharmacy, health advocacy, Nigeria, university, leadership, professional development" />
+        <meta property="og:title" content="H.A.P.I. Student Chapters" />
+        <meta property="og:description" content="Explore H.A.P.I.'s active student chapters driving health advocacy, leadership, and professional development across Nigerian universities." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://hapinitiative.org/chapters" />
+      </Helmet>
       <Navigation />
       
       {/* Hero Section */}
@@ -71,6 +82,15 @@ const Chapters = () => {
           </div>
         </div>
       </section>
+
+      {/* OAU 4 Image Between Student Chapters and Active Chapters */}
+      <div className="flex justify-center my-12">
+        <img
+          src="/lovable-uploads/OAU 4.png"
+          alt="OAU Chapter Activity Group Photo"
+          className="rounded-xl shadow-lg w-full max-w-3xl object-cover"
+        />
+      </div>
 
       {/* Chapters Overview */}
       <section className="py-20">
@@ -183,17 +203,27 @@ const Chapters = () => {
               Join one of our active chapters or help us establish a new one at your university.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-hapi-bright-green hover:bg-hapi-bright-green/90 text-white px-8 py-4">
-                Apply to Join
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-hapi-dark-green text-hapi-dark-green hover:bg-hapi-dark-green hover:text-white dark:border-hapi-bright-green dark:text-hapi-bright-green dark:hover:bg-hapi-bright-green dark:hover:text-hapi-dark-green px-8 py-4"
-              >
-                Start New Chapter
-              </Button>
+              <a href="https://forms.gle/qwv5HHZM3ub6SCDu6" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="bg-hapi-bright-green hover:bg-hapi-bright-green/90 text-white px-8 py-4">
+                  Apply to Join OAU Chapter
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </a>
+              <a href="https://forms.gle/MwkEsFPiE5PuBgTb6" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="bg-hapi-bright-green hover:bg-hapi-bright-green/90 text-white px-8 py-4">
+                  Apply to Join UI Chapter
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </a>
+              <a href="https://forms.gle/mB3bRWE8jbgjtpXp9" target="_blank" rel="noopener noreferrer">
+                <Button 
+                  variant="outline" 
+                  size="lg"
+                  className="border-hapi-dark-green text-hapi-dark-green hover:bg-hapi-dark-green hover:text-white dark:border-hapi-bright-green dark:text-hapi-bright-green dark:hover:bg-hapi-bright-green dark:hover:text-hapi-dark-green px-8 py-4"
+                >
+                  Start New Chapter
+                </Button>
+              </a>
             </div>
           </div>
         </div>

@@ -11,28 +11,31 @@ import ChapterDetail from "./pages/ChapterDetail";
 import Projects from "./pages/Projects";
 import Events from "./pages/Events";
 import NotFound from "./pages/NotFound";
+import { HelmetProvider } from 'react-helmet-async';
 
 const queryClient = new QueryClient();
 
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/chapters" element={<Chapters />} />
-          <Route path="/chapters/:chapterId" element={<ChapterDetail />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/events" element={<Events />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
+  <HelmetProvider>
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/chapters" element={<Chapters />} />
+            <Route path="/chapters/:chapterId" element={<ChapterDetail />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/events" element={<Events />} />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  </HelmetProvider>
 );
 
 export default App;

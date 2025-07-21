@@ -4,6 +4,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Users, Target, Heart, Award, BookOpen, Globe } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 const About = () => {
   const leadership = [
@@ -74,6 +75,15 @@ const About = () => {
 
   return (
     <div className="min-h-screen bg-white dark:bg-hapi-dark-green transition-colors duration-300">
+      <Helmet>
+        <title>About H.A.P.I. | Health Outcomes, Advocacy, and Professional Development Initiative</title>
+        <meta name="description" content="Learn about H.A.P.I.'s mission, vision, values, and leadership team dedicated to transforming pharmacy practice and healthcare in Nigeria." />
+        <meta name="keywords" content="about HAPI, pharmacy, health advocacy, Nigeria, leadership, nonprofit, professional development, public health" />
+        <meta property="og:title" content="About H.A.P.I." />
+        <meta property="og:description" content="Learn about H.A.P.I.'s mission, vision, values, and leadership team dedicated to transforming pharmacy practice and healthcare in Nigeria." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://hapinitiative.org/about" />
+      </Helmet>
       <Navigation />
       
       {/* Hero Section */}
@@ -137,7 +147,7 @@ const About = () => {
               <CardContent>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                   Since our founding in 2022, H.A.P.I. has trained over 500 student leaders, implemented 5+ campus and community health projects, and
-                  launched advocacy and research efforts that influence health policy and promote pharmacy excellence in Nigeria.
+                  launched advocacy and research efforts that will influence health policy and promote pharmacy excellence in Nigeria.
 
                 </p>
               </CardContent>

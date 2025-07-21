@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Calendar, Users, MapPin, Target, ExternalLink } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 const projectsByYear = {
   '2022': [
@@ -254,6 +255,15 @@ const projectsByYear = {
 const Projects = () => {
   return (
     <div className="min-h-screen bg-white dark:bg-hapi-dark-green transition-colors duration-300">
+      <Helmet>
+        <title>H.A.P.I. Past Projects | Health Advocacy & Impact in Nigeria</title>
+        <meta name="description" content="Discover H.A.P.I.'s impactful past projects and initiatives that have advanced pharmacy practice, health advocacy, and professional development across Nigeria." />
+        <meta name="keywords" content="HAPI projects, pharmacy, health advocacy, Nigeria, public health, professional development, student leadership, impact" />
+        <meta property="og:title" content="H.A.P.I. Past Projects" />
+        <meta property="og:description" content="Discover H.A.P.I.'s impactful past projects and initiatives that have advanced pharmacy practice, health advocacy, and professional development across Nigeria." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://hapinitiative.org/projects" />
+      </Helmet>
       <Navigation />
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-white via-green-50/30 to-emerald-50/50 dark:from-hapi-dark-green dark:via-hapi-dark-green/90 dark:to-hapi-dark-green/80">

@@ -6,13 +6,48 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, Heart, Users, Lightbulb, Calendar, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from '@/components/ui/carousel';
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-white dark:bg-hapi-dark-green transition-colors duration-300">
+      <Helmet>
+        <title>H.A.P.I. Advocate Hub | Health Outcomes, Advocacy, and Professional Development Initiative</title>
+        <meta name="description" content="H.A.P.I. is a nonprofit dedicated to strengthening pharmacy practice and transforming healthcare delivery across Nigeria through student leadership, research, advocacy, and compassionate care." />
+        <meta name="keywords" content="pharmacy, health advocacy, Nigeria, professional development, student leadership, public health, HAPI, Good Pharmacy Practice, GPP" />
+        <meta property="og:title" content="H.A.P.I. Advocate Hub" />
+        <meta property="og:description" content="Strengthening pharmacy practice and transforming healthcare delivery across Nigeria." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://hapinitiative.org/" />
+      </Helmet>
       <Navigation />
       <HeroSection />
-      
+
+      {/* Homepage Carousel above Our Mission */}
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 my-12">
+        <Carousel className="relative">
+          <CarouselContent>
+            {[
+              { src: '/lovable-uploads/UI 1.jpg', alt: 'UI Chapter Activity 1' },
+              { src: '/lovable-uploads/OAU 5.jpg', alt: 'OAU Chapter Activity 5' },
+              { src: '/lovable-uploads/UI 4.jpg', alt: 'UI Chapter Activity 4' },
+              { src: '/lovable-uploads/OAU 4.png', alt: 'OAU Chapter Activity 4' },
+            ].map((img, idx) => (
+              <CarouselItem key={idx}>
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  className="w-full h-[32rem] object-cover rounded-xl shadow-md"
+                />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
+      </div>
+
       {/* Mission Overview Section */}
       <section className="py-20 bg-gray-50 dark:bg-hapi-dark-green/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -103,9 +138,16 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12">
             <Card className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-green-100 dark:border-hapi-bright-green/20 bg-white dark:bg-hapi-dark-green/20">
               <CardHeader>
-                <div className="flex items-center justify-between">
-                  <CardTitle className="font-aida text-hapi-dark-green dark:text-white">OAU Chapter</CardTitle>
-                  <MapPin className="h-5 w-5 text-hapi-bright-green" />
+                <div className="flex flex-col items-center mb-4">
+                  <img
+                    src="/lovable-uploads/OAU 5.jpg"
+                    alt="OAU Chapter Group"
+                    className="w-24 h-24 rounded-full object-cover border-4 border-hapi-bright-green shadow-md mb-2"
+                  />
+                  <div className="flex items-center justify-between w-full">
+                    <CardTitle className="font-aida text-hapi-dark-green dark:text-white">OAU Chapter</CardTitle>
+                    <MapPin className="h-5 w-5 text-hapi-bright-green" />
+                  </div>
                 </div>
                 <CardDescription className="text-gray-600 dark:text-gray-300">
                   Obafemi Awolowo University
@@ -127,9 +169,16 @@ const Index = () => {
 
             <Card className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-green-100 dark:border-hapi-bright-green/20 bg-white dark:bg-hapi-dark-green/20">
               <CardHeader>
-                <div className="flex items-center justify-between">
-                  <CardTitle className="font-aida text-hapi-dark-green dark:text-white">UI Chapter</CardTitle>
-                  <MapPin className="h-5 w-5 text-hapi-bright-green" />
+                <div className="flex flex-col items-center mb-4">
+                  <img
+                    src="/lovable-uploads/UI 1.jpg"
+                    alt="UI Chapter Group"
+                    className="w-24 h-24 rounded-full object-cover border-4 border-hapi-bright-green shadow-md mb-2"
+                  />
+                  <div className="flex items-center justify-between w-full">
+                    <CardTitle className="font-aida text-hapi-dark-green dark:text-white">UI Chapter</CardTitle>
+                    <MapPin className="h-5 w-5 text-hapi-bright-green" />
+                  </div>
                 </div>
                 <CardDescription className="text-gray-600 dark:text-gray-300">
                   University of Ibadan
@@ -228,9 +277,16 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-8 md:grid-cols-1">
             <Card className="hover:shadow-lg transition-shadow duration-300 border-green-100 dark:border-hapi-bright-green/20 bg-white dark:bg-hapi-dark-green/20">
               <CardHeader>
-                <div className="flex items-center gap-3">
-                  <Calendar className="h-5 w-5 text-hapi-bright-green" />
-                  <CardTitle className="font-aida text-hapi-dark-green dark:text-white">Good Pharmacy Practice (GPP) Compliance Research</CardTitle>
+                <div className="flex flex-col items-center mb-4">
+                  <img
+                    src="/lovable-uploads/GPP.jpg"
+                    alt="GPP Compliance Research"
+                    className="w-24 h-24 rounded-full object-cover border-4 border-hapi-bright-green shadow-md mb-2"
+                  />
+                  <div className="flex items-center gap-3 w-full justify-center">
+                    <Calendar className="h-5 w-5 text-hapi-bright-green" />
+                    <CardTitle className="font-aida text-hapi-dark-green dark:text-white">Good Pharmacy Practice (GPP) Compliance Research</CardTitle>
+                  </div>
                 </div>
                 <CardDescription className="text-gray-600 dark:text-gray-300">
                   Ongoing study on pharmacy standards in Nigeria.

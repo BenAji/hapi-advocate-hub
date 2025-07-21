@@ -39,6 +39,7 @@ const Navigation = () => {
     { label: 'About', path: '/about' },
     { 
       label: 'Student Chapters', 
+      path: '/chapters',
       hasDropdown: true,
       items: [
         { label: 'OAU Chapter', path: '/chapters/oau' },
@@ -69,13 +70,20 @@ const Navigation = () => {
               item.hasDropdown ? (
                 <DropdownMenu key={item.label}>
                   <DropdownMenuTrigger asChild>
-                    <Button
-                      variant="ghost"
-                      className="text-foreground hover:text-hapi-bright-green hover:bg-hapi-bright-green/10 transition-colors duration-200 flex items-center gap-1"
-                    >
-                      {item.label}
-                      <ChevronDown className="h-4 w-4" />
-                    </Button>
+                    <div className="flex items-center">
+                      <Link
+                        to={item.path}
+                        className={`text-sm font-medium transition-colors duration-200 hover:text-hapi-bright-green flex items-center gap-1 ${
+                          isActive(item.path)
+                            ? 'text-hapi-bright-green border-b-2 border-hapi-bright-green'
+                            : 'text-foreground'
+                        }`}
+                        style={{ textDecoration: 'none' }}
+                      >
+                        {item.label}
+                        <ChevronDown className="h-4 w-4" />
+                      </Link>
+                    </div>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent className="bg-white dark:bg-hapi-dark-green border border-border shadow-lg">
                     {item.items?.map((subItem) => (
@@ -136,7 +144,13 @@ const Navigation = () => {
               {navItems.map((item) => (
                 item.hasDropdown ? (
                   <div key={item.label} className="space-y-2">
-                    <span className="text-sm font-medium text-foreground px-3 py-2 block">{item.label}</span>
+                    <Link
+                      to={item.path}
+                      className="text-sm font-medium text-foreground px-3 py-2 block hover:text-hapi-bright-green"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      {item.label}
+                    </Link>
                     {item.items?.map((subItem) => (
                       <Link
                         key={subItem.path}

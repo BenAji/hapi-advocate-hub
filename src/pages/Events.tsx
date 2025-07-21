@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Calendar, MapPin, Users, ExternalLink, Filter } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 // 2025 past projects (from Projects.tsx)
 const pastProjects2025 = [
@@ -112,6 +113,15 @@ const Events = () => {
 
   return (
     <div className="min-h-screen bg-white dark:bg-hapi-dark-green transition-colors duration-300">
+      <Helmet>
+        <title>H.A.P.I. Events | Health Advocacy, Research & Community Engagement</title>
+        <meta name="description" content="Join H.A.P.I.'s upcoming and past events, including research, workshops, and community engagement initiatives advancing health advocacy and professional development in Nigeria." />
+        <meta name="keywords" content="HAPI events, pharmacy, health advocacy, Nigeria, research, workshops, community engagement, professional development" />
+        <meta property="og:title" content="H.A.P.I. Events" />
+        <meta property="og:description" content="Join H.A.P.I.'s upcoming and past events, including research, workshops, and community engagement initiatives advancing health advocacy and professional development in Nigeria." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://hapinitiative.org/events" />
+      </Helmet>
       <Navigation />
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-white via-green-50/30 to-emerald-50/50 dark:from-hapi-dark-green dark:via-hapi-dark-green/90 dark:to-hapi-dark-green/80">
