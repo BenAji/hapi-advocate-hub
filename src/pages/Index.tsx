@@ -230,7 +230,7 @@ const Index = () => {
               <CardHeader>
                 <div className="flex items-center gap-3">
                   <Calendar className="h-5 w-5 text-hapi-bright-green" />
-                  <CardTitle className="font-aida text-hapi-dark-green dark:text-white">GPP Compliance Research</CardTitle>
+                  <CardTitle className="font-aida text-hapi-dark-green dark:text-white">Good Pharmacy Practice (GPP) Compliance Research</CardTitle>
                 </div>
                 <CardDescription className="text-gray-600 dark:text-gray-300">
                   Ongoing study on pharmacy standards in Nigeria.
@@ -238,7 +238,7 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  Join us in a descriptive study exploring the challenges Nigerian community pharmacists face in complying with Good Pharmacy Practice (GPP) standards in day-to-day operations.
+                  Join us in a descriptive study exploring the challenges Nigerian community pharmacists face in complying with Good Pharmacy Practice standards in day-to-day operations.
                 </p>
                 <a href="mailto:hapinitiativeorg@gmail.com">
                   <Button className="bg-hapi-bright-green hover:bg-hapi-bright-green/90 text-white">

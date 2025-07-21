@@ -8,19 +8,34 @@ import { Users, Target, Heart, Award, BookOpen, Globe } from 'lucide-react';
 const About = () => {
   const leadership = [
     {
-      name: "Ruth Adeyemi",
-      role: "Board Chair & Executive Director (Interim)",
+      name: "Ruth Adeyemi, PharmD/MPH Candidate",
+      role: "Board Chair (Interim) & Executive Director",
       description: "Oversees overall strategy, operations, and vision alignment"
     },
     {
-      name: "Dr. John (Ikenna) Ogwuegbu",
+      name: "Dr. John (Ikenna) Ogwuegbu, PharmD",
       role: "Vice Chair / Vice President",
       description: "Supports governance, leadership, and external engagement"
     },
     {
-      name: "Dr. Gbola Olayiwola",
+      name: "Dr. Gbola Olayiwola,PhD",
       role: "Director of Strategic Partnerships / External Relations",
       description: "Leads institutional collaborations and funding opportunities"
+    },
+    {
+      name: "Pharmacist Oyinlade Kehinde",
+      role: "Director of Regulatory Affairs & Legal Compliance",
+      description: "Guides legal strategy and practice compliance"
+    },
+    {
+      name: "Dr. Omolola A. Adeoye–Olatunde, PharmD, MS",
+      role: "Director of Public Health & Research Innovation",
+      description: "Leads public health strategy, research agenda, and equity-based impact"
+    },
+    {
+      name: "Pharmacist David Adeyemo",
+      role: "Young Pharmacists & Student Engagement Lead",
+      description: "Strengthens student chapter performance and youth development"
     }
   ];
 
@@ -121,8 +136,8 @@ const About = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                  Since our founding in 2022, H.A.P.I. has trained over 500 student leaders, Implemented 50+ campus and community health projects, and
-                  Launched advocacy and research efforts that influence health policy and promote pharmacy excellence in Nigeria.
+                  Since our founding in 2022, H.A.P.I. has trained over 500 student leaders, implemented 5+ campus and community health projects, and
+                  launched advocacy and research efforts that influence health policy and promote pharmacy excellence in Nigeria.
 
                 </p>
               </CardContent>
@@ -200,7 +215,7 @@ const About = () => {
                     Expansion & Growth
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                    H.A.P.I. transitioned from a grassroots campaign into a structured nonprofit with established student chapters at Obafemi Awolowo University (OAU) and University of Ibadan (UI). New chapters at Benue State University and University of Jos are currently underway.
+                    H.A.P.I. transitioned from a grassroots campaign into a structured nonprofit with established student chapters at the Obafemi Awolowo University (OAU) and the University of Ibadan (UI). New chapters at Benue State University and University of Jos are currently underway.
                   </p>
                 </div>
               </div>
