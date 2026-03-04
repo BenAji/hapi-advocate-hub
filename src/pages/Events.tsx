@@ -96,11 +96,28 @@ const Events = () => {
       cta: 'Want to contribute or learn more?',
       openTo: 'Open to pharmacy professionals, researchers, and students.',
     },
+    {
+      id: 2,
+      title: 'H.A.P.I. Global – International Women\'s Day (IWD) 2026 Scholarship',
+      type: 'Scholarship',
+      category: 'Scholarship',
+      status: 'Accepting Applications',
+      description: 'In celebration of International Women\'s Day 2026, and in alignment with this year\'s theme, "Give To Gain," H.A.P.I. Global is proud to award two (2) Nigerian female student pharmacists a renewable NGN 50,000 scholarship. NOTE: Scholarship is renewable for 3 semesters for a total of NGN150,000.',
+      location: 'Nigeria',
+      participants: 'Nigerian female student pharmacists (2 awardees)',
+      keyTopics: ['Good Pharmacy Practice'],
+      contact: 'Apply here',
+      contactLink: 'https://forms.gle/5F8RNrwCGSE8gx7X8',
+      cta: 'To apply, visit the link below.',
+      openTo: 'Open to Nigerian female student pharmacists.',
+      image: '/lovable-uploads/HAPI IWD Scholarship.png',
+    },
   ];
 
   const categories = [
     { value: 'all', label: 'All Events' },
     { value: 'Research', label: 'Research' },
+    { value: 'Scholarship', label: 'Scholarship' },
   ];
 
   const filteredUpcomingEvents = selectedCategory === 'all'
@@ -174,6 +191,15 @@ const Events = () => {
                 {filteredUpcomingEvents.map(event => (
                   <Card key={event.id} className="hover:shadow-xl transition-all duration-300 hover:scale-[1.02] border-green-100 dark:border-hapi-bright-green/20 bg-white dark:bg-hapi-dark-green/20">
                     <CardHeader>
+                      {event.image && (
+                        <div className="mb-4">
+                          <img
+                            src={event.image}
+                            alt={event.title}
+                            className="w-full h-56 object-cover rounded-lg mb-3"
+                          />
+                        </div>
+                      )}
                       <div className="flex flex-wrap items-center gap-2 mb-3">
                         <Badge className="bg-blue-100 text-blue-800 dark:bg-blue-900/20 dark:text-blue-400">{event.type}</Badge>
                         <Badge className="bg-green-100 text-green-800 dark:bg-green-900/20 dark:text-green-400">{event.status}</Badge>
