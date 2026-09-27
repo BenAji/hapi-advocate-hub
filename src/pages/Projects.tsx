@@ -273,7 +273,7 @@ const Projects = () => {
               Past Projects
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Discover the impactful initiatives and interventions that H.A.P.I. has implemented 
+              Discover the impactful healthcare initiatives and interventions that H.A.P.I. has implemented 
               to improve health outcomes and strengthen communities across Nigeria.
             </p>
           </div>
