@@ -9,22 +9,22 @@ import { Helmet } from 'react-helmet-async';
 const About = () => {
   const leadership = [
     {
-      name: "Ruth Adeyemi,PharmD,MPH",
+      name: "Ruth Adeyemi, PharmD, MPH",
       role: "Executive Director & Interim Board Chair",
       description: "Oversees overall strategy, operations, and vision alignment"
     },
     {
-      name: "John (Ikenna) Ogwuegbu,PharmD,MA",
+      name: "John (Ikenna) Ogwuegbu, PharmD, MA",
       role: "Vice Chair, Board of Directors",
       description: "Supports governance, leadership, and external engagement"
     },
     {
-      name: "Gbola Olayiwola,M.Sc.,MBA,PharmD,PhD",
+      name: "Gbola Olayiwola, M.Sc.,MBA, PharmD, PhD",
       role: "Director of Strategic Partnerships & External Relations",
       description: "Leads institutional collaborations and funding opportunities"
     },
     {
-      name: "Oyinlade Kehinde,B.Pharm,M.Sc.",
+      name: "Oyinlade Kehinde, BPharm, M.Sc.",
       role: "Director of Regulatory Affairs & Legal Compliance",
       description: "Guides legal strategy and practice compliance"
     },
@@ -34,7 +34,7 @@ const About = () => {
       description: "Leads public health strategy, research agenda, and equity-based impact"
     },
     {
-      name: "David Adeyemo,BPharm",
+      name: "David Adeyemo, BPharm",
       role: "Director of Young Pharmacists & Student Programs",
       description: "Strengthens student chapter performance and youth development"
     }
@@ -91,7 +91,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center animate-fade-in">
             <h1 className="text-5xl font-aida font-bold text-hapi-dark-green dark:text-white mb-6">
-              H.A.P.I.'s Purpose Statement
+              Our Purpose Statement
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
               Health Outcomes, Advocacy, and Professional Development Initiative (H.A.P.I.) is a nonprofit 
