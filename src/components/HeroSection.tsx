@@ -102,11 +102,11 @@ const HeroSection = () => {
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-white/80 dark:bg-hapi-dark-green/40 p-4 rounded-xl border border-green-100 dark:border-hapi-bright-green/20">
                     <h4 className="font-semibold text-hapi-dark-green dark:text-white text-sm mb-1">Health Outcomes</h4>
-                    <p className="text-xs text-gray-600 dark:text-gray-300">GPP-driven patient-centered care</p>
+                    <p className="text-xs text-gray-600 dark:text-gray-300">Providing evidence-based, patient-centered care to all communities</p>
                   </div>
                   <div className="bg-white/80 dark:bg-hapi-dark-green/40 p-4 rounded-xl border border-green-100 dark:border-hapi-bright-green/20">
                     <h4 className="font-semibold text-hapi-dark-green dark:text-white text-sm mb-1">Advocacy</h4>
-                    <p className="text-xs text-gray-600 dark:text-gray-300">Raising standards and shaping policy</p>
+                    <p className="text-xs text-gray-600 dark:text-gray-300">Raising pharmacy practice standards and shaping health policy</p>
                   </div>
                   <div className="bg-white/80 dark:bg-hapi-dark-green/40 p-4 rounded-xl border border-green-100 dark:border-hapi-bright-green/20">
                     <h4 className="font-semibold text-hapi-dark-green dark:text-white text-sm mb-1">Professional Development</h4>
@@ -114,7 +114,7 @@ const HeroSection = () => {
                   </div>
                   <div className="bg-white/80 dark:bg-hapi-dark-green/40 p-4 rounded-xl border border-green-100 dark:border-hapi-bright-green/20">
                     <h4 className="font-semibold text-hapi-dark-green dark:text-white text-sm mb-1">Student Chapters</h4>
-                    <p className="text-xs text-gray-600 dark:text-gray-300">University-led health innovation</p>
+                    <p className="text-xs text-gray-600 dark:text-gray-300">Supporting chapter-led healthcare innovation</p>
                   </div>
                 </div>
               </div>

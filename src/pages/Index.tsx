@@ -56,7 +56,7 @@ const Index = () => {
               Our Mission
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              To advocate for and enforce standard pharmacy practice at all levels, improve patient health outcomes, and promote pharmacists' professional development as key healthcare professionals in the Nigerian healthcare system.
+            To advocate for standards of care across all pharmacy practice settings, improve patient health outcomes, and promote pharmacists' professional development as key healthcare professionals in the Nigerian healthcare system.
             </p>
           </div>
 
