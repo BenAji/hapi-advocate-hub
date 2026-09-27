@@ -12,6 +12,21 @@ import { Helmet } from 'react-helmet-async';
 // 2025 past projects (from Projects.tsx)
 const pastProjects2025 = [
   {
+    title: 'H.A.P.I. Global – International Women\'s Day (IWD) 2026 Scholarship',
+    tags: ['Scholarship', 'Completed'],
+    goal: 'In celebration of International Women\'s Day 2026, and in alignment with this year\'s theme, "Give To Gain," H.A.P.I. Global is proud to award two (2) Nigerian female student pharmacists a renewable NGN 50,000 scholarship. NOTE: Scholarship is renewable for 3 semesters for a total of NGN150,000.',
+    outcomes: [
+      'Key topic: Good Pharmacy Practice',
+      'Open to Nigerian female student pharmacists',
+    ],
+    location: 'Nigeria',
+    date: 'Mar 8, 2026',
+    category: 'Scholarship',
+    image: '/lovable-uploads/HAPI IWD Scholarship.png',
+    media: 'https://forms.gle/5F8RNrwCGSE8gx7X8',
+    mediaLabel: 'View application form',
+  },
+  {
     title: 'Hangout 1.0: Reflecting on Its Journey and Inspiring Impactful Volunteering',
     tags: ['Student Engagement', 'Completed'],
     goal: 'To celebrate volunteers and reflect on impactful service through a team bonding event.',
@@ -64,6 +79,7 @@ const pastProjects2025 = [
 
 const pastCategories = [
   { value: 'all', label: 'All Past Events' },
+  { value: 'Scholarship', label: 'Scholarship' },
   { value: 'Professional Development', label: 'Professional Development' },
   { value: 'Community Outreach', label: 'Community Outreach' },
   { value: 'Awareness Campaign', label: 'Awareness Campaign' },
@@ -96,28 +112,11 @@ const Events = () => {
       cta: 'Want to contribute or learn more?',
       openTo: 'Open to pharmacy professionals, researchers, and students.',
     },
-    {
-      id: 2,
-      title: 'H.A.P.I. Global – International Women\'s Day (IWD) 2026 Scholarship',
-      type: 'Scholarship',
-      category: 'Scholarship',
-      status: 'Accepting Applications',
-      description: 'In celebration of International Women\'s Day 2026, and in alignment with this year\'s theme, "Give To Gain," H.A.P.I. Global is proud to award two (2) Nigerian female student pharmacists a renewable NGN 50,000 scholarship. NOTE: Scholarship is renewable for 3 semesters for a total of NGN150,000.',
-      location: 'Nigeria',
-      participants: 'Nigerian female student pharmacists (2 awardees)',
-      keyTopics: ['Good Pharmacy Practice'],
-      contact: 'Apply here',
-      contactLink: 'https://forms.gle/5F8RNrwCGSE8gx7X8',
-      cta: 'To apply, visit the link below.',
-      openTo: 'Open to Nigerian female student pharmacists.',
-      image: '/lovable-uploads/HAPI IWD Scholarship.png',
-    },
   ];
 
   const categories = [
     { value: 'all', label: 'All Events' },
     { value: 'Research', label: 'Research' },
-    { value: 'Scholarship', label: 'Scholarship' },
   ];
 
   const filteredUpcomingEvents = selectedCategory === 'all'
@@ -275,6 +274,13 @@ const Events = () => {
                 {filteredPastEvents.map((event, idx) => (
                   <Card key={idx} className="border-green-100 dark:border-hapi-bright-green/20 bg-white dark:bg-hapi-dark-green/20">
                     <CardContent className="p-8">
+                      {event.image && (
+                        <img
+                          src={event.image}
+                          alt={event.title}
+                          className="w-full max-h-80 object-cover rounded-lg mb-6"
+                        />
+                      )}
                       <div className="flex flex-wrap items-center gap-2 mb-4">
                         {event.tags && event.tags.map((tag, i) => (
                           <Badge key={i} variant="outline" className="text-xs">
@@ -305,7 +311,7 @@ const Events = () => {
                       {event.media && (
                         <a href={event.media} target="_blank" rel="noopener noreferrer">
                           <button className="mt-2 px-4 py-2 bg-hapi-bright-green text-white rounded hover:bg-hapi-bright-green/90 flex items-center gap-2">
-                            View Media <ExternalLink className="h-4 w-4" />
+                            {event.mediaLabel || 'View Media'} <ExternalLink className="h-4 w-4" />
                           </button>
                         </a>
                       )}
