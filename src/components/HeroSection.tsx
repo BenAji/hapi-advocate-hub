@@ -27,7 +27,7 @@ const HeroSection = () => {
                 </span>
               </h1>
               <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-2xl">
-                The Health Outcomes, Advocacy, and Professional Development Initiative (H.A.P.I.) is committed to transforming Nigeria's pharmacy landscape through Good Pharmacy Practice (GPP), compassionate care, and leadership development. We build healthier communities through research, community engagement, advocating for standard pharmacy practice, empowering our student chapters to lead local health campaigns, and advancing professional excellence.
+                The Health Outcomes, Advocacy, and Professional Development Initiative (H.A.P.I.) is committed to strengthening Nigeria's pharmacy landscape through Good Pharmacy Practice (GPP), compassionate care, and workforce development. We build healthier communities through research, local health campaigns, community engagement, advocacy, practice-based education, and professional excellence.
               </p>
             </div>
 
@@ -110,7 +110,7 @@ const HeroSection = () => {
                   </div>
                   <div className="bg-white/80 dark:bg-hapi-dark-green/40 p-4 rounded-xl border border-green-100 dark:border-hapi-bright-green/20">
                     <h4 className="font-semibold text-hapi-dark-green dark:text-white text-sm mb-1">Professional Development</h4>
-                    <p className="text-xs text-gray-600 dark:text-gray-300">Training the next generation of pharmacy leaders</p>
+                    <p className="text-xs text-gray-600 dark:text-gray-300">Equipping pharmacists and student pharmacists with the knowledge, skills, and leadership needed for professional practice.</p>
                   </div>
                   <div className="bg-white/80 dark:bg-hapi-dark-green/40 p-4 rounded-xl border border-green-100 dark:border-hapi-bright-green/20">
                     <h4 className="font-semibold text-hapi-dark-green dark:text-white text-sm mb-1">Student Chapters</h4>
