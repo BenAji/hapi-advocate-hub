@@ -27,7 +27,7 @@ const HeroSection = () => {
                 </span>
               </h1>
               <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-2xl">
-                The Health Outcomes, Advocacy, and Professional Development Initiative (H.A.P.I.) is committed to transforming Nigeria's pharmacy landscape through Good Pharmacy Practice (GPP), compassionate care, and leadership development. We build healthier communities by empowering student chapters, advocating for standard pharmacy practice, and advancing professional excellence.
+                The Health Outcomes, Advocacy, and Professional Development Initiative (H.A.P.I.) is committed to transforming Nigeria's pharmacy landscape through Good Pharmacy Practice (GPP), compassionate care, and leadership development. We build healthier communities through research, community engagement, advocating for standard pharmacy practice, empowering our student chapters to lead local health campaigns, and advancing professional excellence.
               </p>
             </div>
 
