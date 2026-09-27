@@ -9,33 +9,33 @@ import { Helmet } from 'react-helmet-async';
 const About = () => {
   const leadership = [
     {
-      name: "Ruth Adeyemi, PharmD/MPH Candidate",
-      role: "Board Chair (Interim) & Executive Director",
+      name: "Ruth Adeyemi,PharmD,MPH",
+      role: "Executive Director & Interim Board Chair",
       description: "Oversees overall strategy, operations, and vision alignment"
     },
     {
-      name: "Dr. John (Ikenna) Ogwuegbu, PharmD",
-      role: "Vice Chair / Vice President",
+      name: "John (Ikenna) Ogwuegbu,PharmD,MA",
+      role: "Vice Chair, Board of Directors",
       description: "Supports governance, leadership, and external engagement"
     },
     {
-      name: "Dr. Gbola Olayiwola,PhD",
-      role: "Director of Strategic Partnerships / External Relations",
+      name: "Gbola Olayiwola,M.Sc.,MBA,PharmD,PhD",
+      role: "Director of Strategic Partnerships & External Relations",
       description: "Leads institutional collaborations and funding opportunities"
     },
     {
-      name: "Pharmacist Oyinlade Kehinde",
+      name: "Oyinlade Kehinde,B.Pharm,M.Sc.",
       role: "Director of Regulatory Affairs & Legal Compliance",
       description: "Guides legal strategy and practice compliance"
     },
     {
-      name: "Dr. Omolola A. Adeoye–Olatunde, PharmD, MS",
+      name: "Omolola A. Adeoye–Olatunde, PharmD, MS",
       role: "Director of Public Health & Research Innovation",
       description: "Leads public health strategy, research agenda, and equity-based impact"
     },
     {
-      name: "Pharmacist David Adeyemo",
-      role: "Young Pharmacists & Student Engagement Lead",
+      name: "David Adeyemo,BPharm",
+      role: "Director of Young Pharmacists & Student Programs",
       description: "Strengthens student chapter performance and youth development"
     }
   ];
@@ -91,7 +91,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center animate-fade-in">
             <h1 className="text-5xl font-aida font-bold text-hapi-dark-green dark:text-white mb-6">
-              About H.A.P.I.
+              H.A.P.I.'s Purpose Statement
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
               Health Outcomes, Advocacy, and Professional Development Initiative (H.A.P.I.) is a nonprofit 
@@ -209,7 +209,7 @@ const About = () => {
                     The Beginning
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                    H.A.P.I., formerly TCPPP, was founded on March 12, 2022, by Ruth Adeyemi and a few committed colleagues under the name The Compassionate Pharmacy Practice Project (TCPPP). The organization was born from a desire to improve community-level pharmacy standards and was inspired by Ruth’s early exposure to inadequate healthcare and her late uncle’s example of excellence in pharmacy practice.
+                  Founded on March 12, 2022, by Dr. Ruth Adeyemi and dedicated colleagues from Obafemi Awolowo University (OAU), H.A.P.I., formerly known as “The Compassionate Pharmacy Practice Project (TCPPP)" was established to resolve critical systemic disparities in Nigerian primary healthcare delivery. Adeyemi's early exposure to preventable adverse drug reactions from a chemist “medicine vendor” in rural Ayegbaju-Ekiti, along with her late uncle’s standard of evidence-based medication therapy management and compassionate pharmaceutical care in Ado-Ekiti, drove the initiative. H.A.P.I. was created to institutionalize Good Pharmacy Practice (GPP), curb preventable medication harm, and champion patient-centered care for all, regardless of location.
                   </p>
                 </div>
               </div>
@@ -225,7 +225,8 @@ const About = () => {
                     Expansion & Growth
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                    H.A.P.I. transitioned from a grassroots campaign into a structured nonprofit with established student chapters at the Obafemi Awolowo University (OAU) and the University of Ibadan (UI). New chapters at Benue State University and University of Jos are currently underway.
+                  What began as a shared conviction among a few dedicated advocates quickly grew into a structured national movement. Rooted in grassroots advocacy, H.A.P.I. formalized its impact by establishing recognized student chapters at Obafemi Awolowo University (OAU) and the University of Ibadan (UI), with expansion actively underway at Benue State University and the University of Jos.
+
                   </p>
                 </div>
               </div>
