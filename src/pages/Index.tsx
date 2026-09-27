@@ -279,8 +279,8 @@ const Index = () => {
               <CardHeader>
                 <div className="flex flex-col items-center mb-4">
                   <img
-                    src="/lovable-uploads/GPP.jpg"
-                    alt="GPP Compliance Research"
+                    src="/lovable-uploads/Favicon HAPI.jpg"
+                    alt="H.A.P.I. favicon"
                     className="w-24 h-24 rounded-full object-cover border-4 border-hapi-bright-green shadow-md mb-2"
                   />
                   <div className="flex items-center gap-3 w-full justify-center">
