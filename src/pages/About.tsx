@@ -115,7 +115,7 @@ const About = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                  To advocate for and enforce standard pharmacy practice at all levels, improve patient health 
+                  To advocate for standards of care across all pharmacy practice settings, improve patient health 
                   outcomes, and promote pharmacists’ professional development as key healthcare professionals in 
                   the Nigerian healthcare system.
                 </p>
