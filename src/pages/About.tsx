@@ -109,6 +109,21 @@ const About = () => {
             <Card className="text-center hover:shadow-xl transition-all duration-300 hover:scale-105 border-green-100 dark:border-hapi-bright-green/20 bg-white dark:bg-hapi-dark-green/20">
               <CardHeader>
                 <div className="w-16 h-16 bg-hapi-bright-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Globe className="h-8 w-8 text-hapi-bright-green" />
+                </div>
+                <CardTitle className="font-aida text-hapi-dark-green dark:text-white text-2xl">Our Vision</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                  To build a Nigerian pharmacy practice system where Good Pharmacy Practice (GPP) and Compassionate 
+                  Care lead to improved health outcomes across urban and rural communities.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center hover:shadow-xl transition-all duration-300 hover:scale-105 border-green-100 dark:border-hapi-bright-green/20 bg-white dark:bg-hapi-dark-green/20">
+              <CardHeader>
+                <div className="w-16 h-16 bg-hapi-bright-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Target className="h-8 w-8 text-hapi-bright-green" />
                 </div>
                 <CardTitle className="font-aida text-hapi-dark-green dark:text-white text-2xl">Our Mission</CardTitle>
@@ -118,21 +133,6 @@ const About = () => {
                   To advocate for standards of care across all pharmacy practice settings, improve patient health 
                   outcomes, and advance the professional practice of pharmacists as key healthcare professionals in 
                   the Nigerian healthcare system.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center hover:shadow-xl transition-all duration-300 hover:scale-105 border-green-100 dark:border-hapi-bright-green/20 bg-white dark:bg-hapi-dark-green/20">
-              <CardHeader>
-                <div className="w-16 h-16 bg-hapi-bright-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Globe className="h-8 w-8 text-hapi-bright-green" />
-                </div>
-                <CardTitle className="font-aida text-hapi-dark-green dark:text-white text-2xl">Our Vision</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                  To build a Nigerian pharmacy practice system where Good Pharmacy Practice (GPP) and Compassionate 
-                  Care lead to improved health outcomes across urban and rural communities.
                 </p>
               </CardContent>
             </Card>
