@@ -70,7 +70,7 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-center text-gray-600 dark:text-gray-300">
-                  Advancing Good Pharmacy Practice (GPP) to improve clinical outcomes and community well-being.
+                  Advancing Good Pharmacy Practice (GPP) to improve health outcomes and community well-being.
                 </CardDescription>
               </CardContent>
             </Card>
