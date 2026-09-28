@@ -96,7 +96,7 @@ const About = () => {
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
               Health Outcomes, Advocacy, and Professional Development Initiative (H.A.P.I.) is a nonprofit 
               dedicated to strengthening pharmacy practice and advancing healthcare delivery across 
-              Nigeria through evidence-based, patient-centered care, research, community engagement, and advocacy.
+              Nigeria through evidence-based, patient-centered care, research, community engagement, workforce development, and advocacy.
             </p>
           </div>
         </div>
