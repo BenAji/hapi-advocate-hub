@@ -12,37 +12,43 @@ const About = () => {
       name: "Ruth Adeyemi, PharmD, MPH",
       role: "Executive Director & Interim Board Chair",
       description: "Oversees overall strategy, operations, and vision alignment",
-      image: "/lovable-uploads/Dr. Ruth.jpeg"
+      image: "/lovable-uploads/Dr. Ruth.jpeg",
+      linkedin: "https://www.linkedin.com/in/ruth-adeyemi/"
     },
     {
       name: "John (Ikenna) Ogwuegbu, PharmD, MA",
       role: "Vice Chair, Board of Directors",
       description: "Supports governance, leadership, and external engagement",
-      image: "/lovable-uploads/John Ogwuegbu.jpg"
+      image: "/lovable-uploads/John Ogwuegbu.jpg",
+      linkedin: "https://www.linkedin.com/in/john-ikenna-ogwuegbu/"
     },
     {
       name: "Gbola Olayiwola, M.Sc., MBA, PharmD, PhD",
       role: "Director of Strategic Partnerships & External Relations",
       description: "Leads institutional collaborations and funding opportunities",
-      image: "/lovable-uploads/Dr. Gbola.png"
+      image: "/lovable-uploads/Dr. Gbola.png",
+      linkedin: "https://www.linkedin.com/in/gbola-olayiwola-49989519/"
     },
     {
       name: "Oyinlade Kehinde, BPharm, M.Sc.",
       role: "Director of Regulatory Affairs & Legal Compliance",
       description: "Guides legal strategy and practice compliance",
-      image: "/lovable-uploads/Kehinde Oyinlade.jpeg"
+      image: "/lovable-uploads/Kehinde Oyinlade.jpeg",
+      linkedin: "https://www.linkedin.com/in/oyinlade-kehinde-27a2a9ba/"
     },
     {
       name: "Omolola A. Adeoye–Olatunde, PharmD, MS",
       role: "Director of Public Health & Research Innovation",
       description: "Leads public health strategy, research agenda, and equity-based impact",
-      image: "/lovable-uploads/Dr. Lola.jpeg"
+      image: "/lovable-uploads/Dr. Lola.jpeg",
+      linkedin: "https://www.linkedin.com/in/adeoye-olatunde/"
     },
     {
       name: "David Adeyemo, BPharm",
       role: "Director of Young Pharmacists & Student Programs",
       description: "Strengthens student chapter performance and young pharmacist development",
-      image: "/lovable-uploads/David Adeyemo.png"
+      image: "/lovable-uploads/David Adeyemo.png",
+      linkedin: "https://www.linkedin.com/in/david-adeyemo-b34035215/"
     }
   ];
 
@@ -271,7 +277,15 @@ const About = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             {leadership.map((leader, index) => (
-              <Card key={index} className="text-center hover:shadow-xl transition-all duration-300 hover:scale-105 border-green-100 dark:border-hapi-bright-green/20 bg-white dark:bg-hapi-dark-green/20">
+              <a
+                key={index}
+                href={leader.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block h-full rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-hapi-bright-green"
+                aria-label={`${leader.name} on LinkedIn`}
+              >
+              <Card className="h-full text-center hover:shadow-xl transition-all duration-300 hover:scale-105 border-green-100 dark:border-hapi-bright-green/20 bg-white dark:bg-hapi-dark-green/20 cursor-pointer">
                 <CardHeader>
                   <img
                     src={leader.image}
@@ -289,6 +303,7 @@ const About = () => {
                   </p>
                 </CardContent>
               </Card>
+              </a>
             ))}
           </div>
         </div>
