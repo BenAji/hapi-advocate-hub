@@ -93,7 +93,7 @@ const HeroSection = () => {
                       />
                     </div>
                     <p className="text-hapi-dark-green dark:text-white font-semibold">
-                      Transforming Healthcare Through Compassionate Pharmacy Practice
+                      Transforming Healthcare Through Good Pharmacy Practice
                     </p>
                   </div>
                 </div>
@@ -106,7 +106,7 @@ const HeroSection = () => {
                   </div>
                   <div className="bg-white/80 dark:bg-hapi-dark-green/40 p-4 rounded-xl border border-green-100 dark:border-hapi-bright-green/20">
                     <h4 className="font-semibold text-hapi-dark-green dark:text-white text-sm mb-1">Advocacy</h4>
-                    <p className="text-xs text-gray-600 dark:text-gray-300">Raising pharmacy practice standards and shaping health policy</p>
+                    <p className="text-xs text-gray-600 dark:text-gray-300">Shaping pharmacy policy and advancing the profession</p>
                   </div>
                   <div className="bg-white/80 dark:bg-hapi-dark-green/40 p-4 rounded-xl border border-green-100 dark:border-hapi-bright-green/20">
                     <h4 className="font-semibold text-hapi-dark-green dark:text-white text-sm mb-1">Professional Development</h4>
@@ -114,7 +114,7 @@ const HeroSection = () => {
                   </div>
                   <div className="bg-white/80 dark:bg-hapi-dark-green/40 p-4 rounded-xl border border-green-100 dark:border-hapi-bright-green/20">
                     <h4 className="font-semibold text-hapi-dark-green dark:text-white text-sm mb-1">Student Chapters</h4>
-                    <p className="text-xs text-gray-600 dark:text-gray-300">Supporting chapter-led healthcare innovation</p>
+                    <p className="text-xs text-gray-600 dark:text-gray-300">Developing future pharmacy leaders and advocates</p>
                   </div>
                 </div>
               </div>
