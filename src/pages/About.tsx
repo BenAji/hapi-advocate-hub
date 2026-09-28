@@ -11,32 +11,38 @@ const About = () => {
     {
       name: "Ruth Adeyemi, PharmD, MPH",
       role: "Executive Director & Interim Board Chair",
-      description: "Oversees overall strategy, operations, and vision alignment"
+      description: "Oversees overall strategy, operations, and vision alignment",
+      image: "/lovable-uploads/Dr. Ruth.jpeg"
     },
     {
       name: "John (Ikenna) Ogwuegbu, PharmD, MA",
       role: "Vice Chair, Board of Directors",
-      description: "Supports governance, leadership, and external engagement"
+      description: "Supports governance, leadership, and external engagement",
+      image: "/lovable-uploads/John Ogwuegbu.jpg"
     },
     {
       name: "Gbola Olayiwola, M.Sc., MBA, PharmD, PhD",
       role: "Director of Strategic Partnerships & External Relations",
-      description: "Leads institutional collaborations and funding opportunities"
+      description: "Leads institutional collaborations and funding opportunities",
+      image: "/lovable-uploads/Dr. Gbola.png"
     },
     {
       name: "Oyinlade Kehinde, BPharm, M.Sc.",
       role: "Director of Regulatory Affairs & Legal Compliance",
-      description: "Guides legal strategy and practice compliance"
+      description: "Guides legal strategy and practice compliance",
+      image: "/lovable-uploads/Kehinde Oyinlade.jpeg"
     },
     {
       name: "Omolola A. Adeoye–Olatunde, PharmD, MS",
       role: "Director of Public Health & Research Innovation",
-      description: "Leads public health strategy, research agenda, and equity-based impact"
+      description: "Leads public health strategy, research agenda, and equity-based impact",
+      image: "/lovable-uploads/Dr. Lola.jpeg"
     },
     {
       name: "David Adeyemo, BPharm",
       role: "Director of Young Pharmacists & Student Programs",
-      description: "Strengthens student chapter performance and youth development"
+      description: "Strengthens student chapter performance and youth development",
+      image: "/lovable-uploads/David Adeyemo.png"
     }
   ];
 
@@ -267,9 +273,11 @@ const About = () => {
             {leadership.map((leader, index) => (
               <Card key={index} className="text-center hover:shadow-xl transition-all duration-300 hover:scale-105 border-green-100 dark:border-hapi-bright-green/20 bg-white dark:bg-hapi-dark-green/20">
                 <CardHeader>
-                  <div className="w-24 h-24 bg-gradient-to-br from-hapi-bright-green/20 to-emerald-200/40 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Users className="h-12 w-12 text-hapi-bright-green" />
-                  </div>
+                  <img
+                    src={leader.image}
+                    alt={leader.name}
+                    className="w-24 h-24 rounded-full object-cover border-4 border-hapi-bright-green shadow-md mx-auto mb-4"
+                  />
                   <CardTitle className="font-aida text-hapi-dark-green dark:text-white text-xl">
                     {leader.name}
                   </CardTitle>
