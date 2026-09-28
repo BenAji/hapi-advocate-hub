@@ -46,39 +46,39 @@ const ChapterDetail = () => {
       ],
       leadership: [
         {
-          name: 'Mayowa Mulero',
+          name: 'Christopher Aleji',
           role: 'Student Representative',
           year: '5th Year Pharmacy Student',
           bio: 'Health leadership, systems strengthening, and public-facing campus engagement'
         },
         {
-          name: 'Christopher Aleji',
+          name: 'Stella Olugbo',
           role: 'Co-Student Representative',
           year: '4th Year Pharmacy Student',
           bio: 'Collaborative leadership and pharmacy advocacy'
         },
         {
-          name: 'Ademola Bakenne',
+          name: 'Olamide Alamutu',
           role: 'Program Coordinator',
           year: '5th Year Pharmacy Student',
           bio: 'Professional development program design and team logistics'
         },
         {
-          name: 'Opeyemi Oyegunle',
+          name: 'Tolulope Agbemuko',
           role: 'Secretary',
-          year: '4th Year Pharmacy Student',
+          year: '5th Year Pharmacy Student',
           bio: 'Communication, documentation, and event coordination'
         },
         {
-          name: 'Stella Olugbo',
+          name: 'Opeyemi Oyegunle',
           role: 'Graphic Designer',
-          year: '3rd Year',
+          year: '5th Year Pharmacy Student',
           bio: 'Visual Story telling and Digital Health Promotion'
         },
         {
-          name: 'Favour Aremu',
+          name: 'Mayowa Mulero',
           role: 'Immediate Past Student Rep',
-          year: 'Graduate Pharmacy Student',
+          year: 'Pharmacist',
           bio: 'Mentorship, institutional memory, and chapter advisory support'
         }
       ],
@@ -109,12 +109,12 @@ const ChapterDetail = () => {
         'Finalists (Track B) - African Youth AMR 1.0 Hackathon | IPSF-AFRO'
       ],
       contact: {
-        email: 'tomabless2018@gmail.com',
+        email: 'hapioau@gmail.com',
         meetingTime: 'Monday - Friday',
         meetingLocation: 'Faculty of Pharmacy, Obafemi Awolowo University',
       },
       joinForm: 'https://forms.gle/qwv5HHZM3ub6SCDu6',
-      contactMailto: 'mailto:tomabless2018@gmail.com',
+      contactMailto: 'mailto:hapioau@gmail.com',
     },
     ui: {
       name: 'UI Chapter',
@@ -148,13 +148,12 @@ const ChapterDetail = () => {
         }
       ],
       leadership: [
-        { name: 'Priscilla Ajayi', role: 'Student Representative', year: 'Pharmacy – 3rd Year' },
-        { name: 'Khadijat Shonibare', role: 'Co-Student Representative', year: 'Pharmacy – 5th Year' },
-        { name: 'Testimony Adeleke', role: 'General Secretary', year: 'Pharmacy – 3rd Year' },
-        { name: 'Abraham Ogunlowo', role: 'Programs Coordinator', year: 'Pharmacy – 4th Year' },
-        { name: 'Clement Ojo', role: 'Co-Programs Coordinator', year: 'Pharmacy – 4th Year' },
-        { name: 'Grace Akande', role: 'Financial Secretary', year: 'Pharmacy – 3rd Year' },
-        { name: 'Olakulehin Adebusuyi', role: 'Immediate Past Student Rep', year: 'Pharmacy – 5th Year' },
+        { name: 'Kazeem Barakat', role: 'Student Representative', year: 'Pharmacy – 5th Year Pharmacy Student' },
+        { name: 'Akande Grace', role: 'Co-Student Representative', year: 'Pharmacy – 4th Year Pharmacy Student' },
+        { name: 'Faronbi Temidayo', role: 'General Secretary', year: 'Pharmacy – 3rd Year Pharmacy Student' },
+        { name: 'Brai Alenosi', role: 'Programs Coordinator', year: 'Pharmacy – 3rd Year Pharmacy Student' },
+        { name: 'Ajayi Temiloluwa', role: 'Public Relations Officer', year: 'Pharmacy – 3rd Year Pharmacy Student' },
+        { name: 'Priscilla Ajayi', role: 'Immediate Past Student Rep', year: 'Pharmacy – 4th Year Pharmacy Student' },
       ],
       recentEvents: [
         {
@@ -174,15 +173,15 @@ const ChapterDetail = () => {
         }
       ],
       achievements: [
-        'Outstanding Service Award — Olakulehin Adebusuyi recognized by PANS UI for student leadership (2023/2024)'
+        'Outstanding Service Award — Olakulehin Adebusuyi (Past Student Representative) recognized by PANS UI for student leadership (2023/2024)'
       ],
       contact: {
-        email: 'priscillaajayi00@gmail.com',
+        email: 'hapiunibadan@gmail.com',
         meetingTime: 'Monday - Friday',
         meetingLocation: 'Faculty of Pharmacy, University of Ibadan',
       },
       joinForm: 'https://forms.gle/MwkEsFPiE5PuBgTb6',
-      contactMailto: 'mailto:priscillaajayi00@gmail.com',
+      contactMailto: 'mailto:hapiunibadan@gmail.com',
     }
   };
 
