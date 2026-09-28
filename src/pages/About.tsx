@@ -41,7 +41,7 @@ const About = () => {
     {
       name: "David Adeyemo, BPharm",
       role: "Director of Young Pharmacists & Student Programs",
-      description: "Strengthens student chapter performance and youth development",
+      description: "Strengthens student chapter performance and young pharmacist development",
       image: "/lovable-uploads/David Adeyemo.png"
     }
   ];
