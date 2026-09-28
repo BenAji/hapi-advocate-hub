@@ -22,14 +22,14 @@ const Chapters = () => {
         'Finalists (Track B) - African Youth AMR 1.0 Hackathon | IPSF-AFRO'
       ],
       leadership: [
-        { name: 'Mayowa Mulero', role: 'Student Representative' },
-        { name: 'Christopher Aleji', role: 'Co-Student Representative' },
-        { name: 'Ademola Bakenne', role: 'Program Coordinator' },
-        { name: 'Opeyemi Oyegunle', role: 'Secretary' },
-        { name: 'Stella Olugbo', role: 'Graphic Designer' },
-        { name: 'Favour Aremu', role: 'Immediate Past Student Rep' }
+        { name: 'Christopher Aleji', role: 'Student Representative' },
+        { name: 'Stella Olugbo', role: 'Co-Student Representative' },
+        { name: 'Olamide Alamutu', role: 'Program Coordinator' },
+        { name: 'Tolulope Agbemuko', role: 'Secretary' },
+        { name: 'Opeyemi Oyegunle', role: 'Graphic Designer' },
+        { name: 'Mayowa Mulero', role: 'Immediate Past Student Rep' }
       ],
-      contact: 'tomabless2018@gmail.com'
+      contact: 'hapioau@gmail.com'
     },
     {
       id: 'ui',
@@ -40,18 +40,17 @@ const Chapters = () => {
       members: '15+',
       description: 'The University of Ibadan Chapter of H.A.P.I. builds on UI’s legacy of academic excellence and community engagement to advocate for better pharmacy practice, promote public health awareness, and empower the next generation of student leaders.',
       achievements: [
-        'Outstanding Service Award — Olakulehin Adebusuyi recognized by PANS UI for student leadership (2023/2024)'
+        'Outstanding Service Award — Olakulehin Adebusuyi (past Student Representative) recognized by PANS UI for student leadership (2023/2024)'
       ],
       leadership: [
-        { name: 'Priscilla Ajayi', role: 'Student Representative' },
-        { name: 'Khadijat Shonibare', role: 'Co-Student Representative' },
-        { name: 'Testimony Adeleke', role: 'General Secretary' },
-        { name: 'Abraham Ogunlowo', role: 'Programs Coordinator' },
-        { name: 'Clement Ojo', role: 'Co-Programs Coordinator' },
-        { name: 'Grace Akande', role: 'Financial Secretary' },
-        { name: 'Olakulehin Adebusuyi', role: 'Immediate Past Student Rep' }
+        { name: 'Kazeem Barakat', role: 'Student Representative' },
+        { name: 'Akande Grace', role: 'Co-Student Representative' },
+        { name: 'Faronbi Temidayo', role: 'General Secretary' },
+        { name: 'Brai Alenosi', role: 'Programs Coordinator' },
+        { name: 'Ajayi Temiloluwa', role: 'Public Relations Officer' },
+        { name: 'Priscilla Ajayi', role: 'Immediate Past Student Rep' }
       ],
-      contact: 'priscillaajayi00@gmail.com'
+      contact: 'hapiunibadan@gmail.com'
     }
   ];
 
