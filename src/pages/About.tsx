@@ -19,7 +19,7 @@ const About = () => {
       description: "Supports governance, leadership, and external engagement"
     },
     {
-      name: "Gbola Olayiwola, M.Sc.,MBA, PharmD, PhD",
+      name: "Gbola Olayiwola, M.Sc., MBA, PharmD, PhD",
       role: "Director of Strategic Partnerships & External Relations",
       description: "Leads institutional collaborations and funding opportunities"
     },
